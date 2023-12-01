@@ -1,1 +1,1 @@
-print()
+print("Salom Dunyo")
