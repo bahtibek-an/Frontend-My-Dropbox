@@ -1,0 +1,95 @@
+
+<p style="color: green"><%= notice %></p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="page-header">
+        <h1>Your Folders</h1>
+      </div>
+
+      <div id="folders">
+        <% @folders.each do |folder| %>
+           <%# <%= render folder %> 
+         <p>
+          <%# <%= link_to "Show this folder", folder %> 
+         </p>
+          <div class="folder-card">
+            <div class="folder-content">
+              <%= image_tag("folder.png", class: "folder-icon") %>
+              <%= link_to folder.name, folder, class: "folder-link" %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="text-center">
+        <%= link_to new_folder_path, class: "btn btn-success" do %>
+        <%= image_tag("az.png", class: "create-folder-icon") %>
+         Create Folder
+      <% end %>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+  /* app/assets/stylesheets/custom.css */
+
+  .page-header {
+    background-color: #0061ff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .page-header h1 {
+    font-size: 20px;
+  }
+
+  .create-folder-icon{
+     width: 24px; /* Adjust the width to control the size of the icon */
+    height: auto;
+    margin-right: 10px; 
+  }
+   .folder-icon {
+    width: 24px; /* Adjust the width to control the size of the icon */
+    height: auto;
+    margin-right: 10px; /* Add some spacing between the icon and the text */
+  }
+
+  .folder-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px; /* Adjust the padding to change the size */
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .folder-card p {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .btn-primary {
+    background-color: #0061ff;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #0053df;
+  }
+
+  .btn-success {
+    background-color: #3ab65b;
+    border: none;
+  }
+
+  .btn-success:hover {
+    background-color: #2c9446;
+  }
+</style>

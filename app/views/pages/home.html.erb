@@ -1,0 +1,54 @@
+<style>
+  body {
+    background-color: #0061ff; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 20px; 
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .btn-primary {
+    background-color: #0061ff;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #0053df; 
+  }
+
+ 
+  .logo-container {
+    text-align: center;
+  }
+
+  .medium-logo {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+  }
+</style>
+
+<div class="container">
+  <div class="logo-container">
+    <%= image_tag "drop.png", alt: "Logo", class: "navbar-brand medium-logo" %>
+  </div>
+
+  <h1>Welcome to Dropbox</h1>
+  <p>Your All-in-One Cloud Storage Solution</p>
+
+  <a class="btn btn-primary" href="<%= new_user_session_path %>">Sign In</a>
+  <a class="btn btn-primary" href="<%= new_user_registration_path %>">Sign Up</a>
+</div>

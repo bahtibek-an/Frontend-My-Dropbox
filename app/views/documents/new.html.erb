@@ -1,0 +1,12 @@
+<h1>New File</h1>
+<%= form_with(model: [ @folder, @document ], url: folder_documents_path(@folder)) do |form| %>
+  
+<% end %>
+
+<%= render "form", document: @document %>
+
+<br>
+
+<div>
+  <%= link_to "Back to files", folder_documents_path(@folder) %>
+</div>

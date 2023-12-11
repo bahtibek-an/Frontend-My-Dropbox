@@ -1,0 +1,32 @@
+<p style="color: green"><%= notice %></p>
+
+<%# <%= render @folder %> 
+
+<h2>Name of file: <%= @folder.name %></h2>
+<br/>
+<b>Upload files:</b>
+<br/>
+
+
+<%= link_to "Create", new_folder_document_path(@folder), class: "btn btn-primary" %>
+<br/>
+<br/>
+<h2>Files in this folder:</h2>
+<ul>
+  <% @folder.documents.each do |document| %>
+    <li><%= link_to document.name, folder_document_path(@folder, document) %></li>
+  <% end %>
+</ul>
+
+<br/>
+<br/>
+<%# <h2>Upload Documents</h2>
+<%= link_to "Upload Documents", new_folder_document_path(@folder), class: "btn btn-primary" %>
+
+ 
+<div>
+  <%= link_to "Edit this folder", edit_folder_path(@folder) %> |
+   <%= link_to "Back to folders", folders_path %>
+
+ <%= button_to "Destroy this folder", @folder, method: :delete %>
+</div>
