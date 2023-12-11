@@ -1,47 +1,40 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
-
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
-
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
-
-=> File synchronization, that sounds cool!
-
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
-
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
-
-Let's implement a file synchronization using Amplify & Lambda & S3
-
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
-
-
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
-
-## SPECIFICATIONS
+# Welcome to My Dropbox
+***
+https://dropboxclone.fly.dev
+## Task
+My Dropbox is a cloud storage solution designed to address the need for secure, easy-to-use file storage and sharing. The challenge is to create a platform that provides a simple, yet powerful, way for users to manage their files 
+SPECIFICATIONS
 User - authentification
 Upload a file
 Versioning
 DNS/Routing
 
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
+## Description
+My Dropbox is a web-based file storage and sharing platform that allows users to upload, organize, and share files 
+and folders. It provides features such as user registration and authentication, folder creation, file uploads. The project is built using Ruby on Rails and 
+leverages the power of the Active Storage gem for file management versioning, and DNS/routing for seamless user experience.
+## Installation
+Clone the project repository from GitHub.
 
-The url of your project will be store inside the readme.
+Install the necessary dependencies by running bundle install.
 
-No more than 1 components per file.
-Additionals components will be in `src/components/`
+Set up the database and run migrations using rails db:migrate.
+Active Storage: Part of Rails for managing file uploads to cloud storage or the local file system.
+Start the Rails server using rails server.
+Access the application in a web browser using the specified domain name.
 
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
+## Usage
+Project was done using ruby on rails
+My Dropbox is simple to use. Here are the basic steps to get started:
 
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
+Sign up or log in to your account.
+Create folders to organize your files.
+Upload files to your folders.
 
-On the css/colors/design, you can be creative.
+The App should be run from the web via :
+
+https://dropboxclone.fly.dev/
+
+### The Core Team
+
+

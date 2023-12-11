@@ -1,0 +1,16 @@
+
+<%= form_with(model: [@folder, @document], url: folder_document_path(@folder, @document), local: true, method: :patch) do |form| %>
+  <h1>Edit file</h1>
+  <%= form.text_field :name %>
+  <%= form.file_field :attachments, multiple: true %>
+  <%= form.submit 'Update Document', class: 'btn btn-primary' %>
+<% end %>
+
+<br>
+<%# <%= render "form", document: @document %>
+<div>
+  <div>
+    <%= link_to "Show this file", folder_document_path(@folder, @document) %> |
+    <%= link_to "Back to files", folder_documents_path(@folder) %>
+  </div>
+</div>
