@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>FILES</h1>
+
+
+ <div>
+  <% @documents.each do |document| %>
+    <%= render document %>
+    <p>
+      <%= link_to "view", folder_document_path(@folder, document) %>
+    </p>
+  <% end %>
+</div>
+
+
+<%= link_to "Upload", new_folder_document_path(@folder) %> ||
+  <%= link_to "Back", folders_path %>

@@ -1,0 +1,32 @@
+<p style="color: green"><%= notice %></p>
+
+<%# <h1><%= @document.name %>
+
+<%# <%= link_to "Back to files", folder_documents_path(@folder) %> 
+
+<% if @document.attachments.attached? %>
+  <h2>Attached Files:</h2>
+  <ul>
+    <% @document.attachments.each do |attachment| %>
+      <li>
+        <%= link_to attachment.filename, rails_blob_path(attachment, disposition: "attachment") %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No files attached.</p>
+<% end %>
+
+<%= link_to "Back to files", folder_documents_path(@folder) %> ||
+<%= link_to "Edit files", edit_folder_document_path(@folder, @document) %> |
+<%= button_to "Destroy files", folder_document_path(@folder, @document), method: :delete %>
+
+<%# <%= render @document %> 
+<br/>
+<div>
+<%= link_to "Back to folders", folders_path %>
+</div>
+
+
+
+
