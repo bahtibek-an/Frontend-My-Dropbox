@@ -36,5 +36,4 @@ The App should be run from the web via :
 https://dropboxclone.fly.dev/
 
 ### The Core Team
-Faith Okosun
 
