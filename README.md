@@ -30,6 +30,10 @@ Features
 - upload file
 - update profile
 
+Update Project Features
+
+- delete folder and file
+
 ### The Core Team
 
 - <a href="https://github.com/Oqilbek2121">To'lqinov Oqilbek</a><br>
