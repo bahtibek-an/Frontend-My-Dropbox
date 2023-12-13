@@ -1,0 +1,15 @@
+.bg-green-500{
+    background-color: #33d66f;
+}
+.bg-green-500:hover{
+    background-color: #01e482;
+}
+.text-green{
+    color: #33d671;
+}
+.btn-primary{
+    background: #027bf5;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
