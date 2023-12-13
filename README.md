@@ -31,7 +31,7 @@ Once the project is up and running, you can access it through your web browser:
 
 
 ### The Core Team
-abdurashidova zaxro `abdurash_z` && Islomjon Tursunboev `tursunbo_i`
+Islomjon Tursunboev - `tursunbo_i`
 
 <span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
 <span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px'></span>
