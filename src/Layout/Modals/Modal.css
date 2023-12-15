@@ -1,0 +1,88 @@
+.modal {
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease;
+  text-align: center;
+}
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-inner {
+  background-color: #3e3c3c;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 600px;
+  min-height: 400px;
+  margin: auto;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 20%;
+}
+.modal-inner .close-modal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  margin: 10px;
+}
+.modal-inner .close-modal svg {
+  font-size: 1.5rem;
+}
+.modal-inner .create-folder {
+  width: 60%;
+  margin: auto;
+  padding-top: 50px;
+}
+.modal-inner .create-folder h2 {
+  margin: 10px 0;
+}
+.modal-inner .create-folder input {
+  padding: 8px 12px;
+  width: 250px;
+}
+.modal-inner .create-folder button {
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  margin-left: 15px;
+}
+.modal-inner .upload-file input {
+  display: none;
+}
+.modal-inner .upload-file {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  padding: 10px;
+  padding-top: 15%;
+  text-align: center;
+}
+.modal-inner .upload-file h2 {
+  margin: 10px 0;
+}
+.modal-inner .upload-file button {
+  background-color: transparent;
+  border: 2px solid #999;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  margin-top: 15px;
+}
+.modal-inner .upload-file button:hover {
+  background-color: #999;
+  color: #fff;
+}
+.img__container img {
+  width: 100%;
+}

@@ -1,0 +1,57 @@
+header {
+  background-color: #08c2c9;
+  color: white;
+  position: relative;
+  padding: 10px;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .dropdown img {
+  width: 35px;
+  cursor: pointer;
+}
+header .btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.btn span {
+  font-size: 20px;
+}
+
+header .dropdown-menu {
+  position: absolute;
+  right: 10px;
+  bottom: -145px;
+  width: 150px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+  background-color: gray;
+  padding: 10px;
+}
+header .dropdown-menu.active {
+  width: 20%;
+  opacity: 1;
+  visibility: visible;
+}
+header .dropdown-menu li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0;
+  gap: 10px;
+}
+ul a {
+  color: aliceblue;
+  cursor: pointer;
+  text-decoration: none;
+}
