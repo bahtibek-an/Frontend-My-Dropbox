@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: source sans pro;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+p {
+    font-size: 12px;
+    color: #888;
+}
+
+
+
+.stage {
+    max-width: 80%;
+    margin: 10px 10%;
+    position: relative;
+}
+
+.folder-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.slash {
+    color: blue;
+}
+
+.folder-wrap::before {
+    display: block;
+    position: absolute;
+    top: -40px;
+}
+
+.folder-wrap:first-child::before {
+    display: block;
+    position: absolute;
+    top: -40px;
+}
+
+.tile {
+    border-radius: 3px;
+    width: calc(20% - 17px);
+    margin-bottom: 5px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    transition: 0.2s all cubic-bezier(0.4, 0.0, 0.2, 1);
+    position: relative;
+    margin-right: 17px;
+    cursor: pointer;
+}
+
+.tile:hover {
+    box-shadow: 0px 7px 5px -6px rgba(0, 0, 0, 0.12);
+}
+
+.tile i {
+    color: #00A8FF;
+    height: 55px;
+    margin-bottom: 5px;
+    font-size: 55px;
+    display: block;
+    line-height: 54px;
+    cursor: pointer;
+}
+
+.tile i.mdi-file-document {
+    color: #8fd9ff;
+}
+
+.back {
+    font-size: 26px;
+    border-radius: 50px;
+    background: #00a8ff;
+    border: 0;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin: 30px 30px 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Transitioning */
+.folder-wrap {
+    position: absolute;
+    width: 100%;
+    transition: .365s all cubic-bezier(.4, 0, .2, 1);
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+}
+
+.folder-wrap.level-up {
+    transform: scale(1.2);
+
+}
+
+.folder-wrap.level-current {
+    transform: scale(1);
+    pointer-events: all;
+    opacity: 1;
+    position: relative;
+    height: auto;
+    overflow: visible;
+}
+
+.folder-wrap.level-down {
+    transform: scale(0.8);
+}
