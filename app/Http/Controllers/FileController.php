@@ -16,7 +16,7 @@ class FileController extends Controller
         // dd($request->all());
         $request->validate([
             'folder_id' => 'nullable|exists:folders_tables,id',
-            'file_name' => 'required|mimes:jpeg,png,pdf,docx|max:2048',
+            'file_name' => 'required|file',
         ]);
 
         $file = $request->file('file_name');
