@@ -13,7 +13,7 @@ class SubFileController extends Controller
     public function subFileStore(Request $request, Folder $folder)
     {
         $request->validate([
-            'file_name' => 'required|mimes:jpeg,png,pdf,docx|max:2048',
+            'file_name' => 'required|file',
         ]);
 
         $file = $request->file('file_name');
