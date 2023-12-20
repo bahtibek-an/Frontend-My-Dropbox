@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+
+section {
+  font-family: 'Gruppo', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("https://techcrunch.com/wp-content/uploads/2018/03/history-of-dropbox.png");
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  background: url("https://techcrunch.com/wp-content/uploads/2018/03/history-of-dropbox.png");
+  min-height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(8px);
+}
+
+.blur {
+  backdrop-filter: blur(15px);
+}
+
+.form-box {
+  font-family: 'Gruppo', sans-serif;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  color: #fff;
+  background: transparent;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 49, 49, 0.5);
+  border-right: 1px solid rgba(0, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(57, 255, 20, 0.5);
+  border-left: 1px solid rgba(255, 255, 113, 0.5);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+
+.form-box {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: 'Gruppo', sans-serif;
+  font-size: 2em;
+  color: aliceblue;
+  text-align: center;
+}
+
+.inputbox {
+  font-family: 'Gruppo', sans-serif;
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+  font-family: 'Gruppo', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: aliceblue;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .5s;
+}
+
+input:focus~label,
+input:valid~label {
+  top: -5px;
+}
+
+.inputbox input {
+  font-family: 'Gruppo', sans-serif;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: aliceblue;
+}
+
+.inputbox ion-icon {
+
+  position: absolute;
+  right: 8px;
+  color: aliceblue;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+.forget {
+  font-family: 'Gruppo', sans-serif;
+  margin: -15px 0 15px;
+  font-size: .9em;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+.forget label input {
+  font-family: 'Gruppo', sans-serif;
+  margin-right: 3px;
+}
+
+.forget label a {
+  font-family: 'Gruppo', sans-serif;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.forget label a:hover {
+  font-family: 'Gruppo', sans-serif;
+  text-decoration: underline;
+}
+
+button {
+  font-family: 'Gruppo', sans-serif;
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background-color: aliceblue;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.register {
+  font-family: 'Gruppo', sans-serif;
+  font-size: .9em;
+  color: aliceblue;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a {
+  font-family: 'Gruppo', sans-serif;
+  color: red;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register p a:hover {
+  font-family: 'Gruppo', sans-serif;
+  text-decoration: underline;
+}
+
+* {
+  font-family: 'Gruppo', sans-serif;
+  margin: 0;
+  padding: 0;
+}
