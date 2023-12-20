@@ -5,8 +5,6 @@
 This is what it's all about!
 
 ### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
-
 Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
 
 => File synchronization, that sounds cool!
@@ -43,5 +41,7 @@ CSS will be in a file associated to the component: css for ExampleComponent.js w
 
 Your Readme will have to describe the project.
 Your .gitignore must remove node_modules/
+
+I made a Dropbox project with 
 
 On the css/colors/design, you can be creative.
