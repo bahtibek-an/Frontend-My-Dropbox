@@ -1,0 +1,15 @@
+.bg-pink-500{
+    background-color: #0eccee;
+}
+.bg-pink-500:hover{
+    background-color: #0eccee;
+}
+.text-pink{
+    color: #1b2539;
+}
+.btn-primary{
+    background: #1b2539;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
