@@ -1,0 +1,131 @@
+/** @format */
+
+body {
+  background: #ad9c9c;
+  background-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.loader{
+
+
+li {
+  display: block;
+  position: absolute;
+  opacity: 0.9;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  top: 150px;
+  left: 50px;
+  -webkit-transform-origin: 30px 30px;
+  -moz-transform-origin: 30px 30px;
+  -ms-transform-origin: 30px 30px;
+  -o-transform-origin: 30px 30px;
+  transform-origin: 30px 30px;
+  background: #ea0d0d;
+  -webkit-animation: rota 2s ease-in-out infinite;
+  -moz-animation: rota 2s ease-in-out infinite;
+  -ms-animation: rota 2s ease-in-out infinite;
+  -o-animation: rota 2s ease-in-out infinite;
+  animation: rota 2s ease-in-out infinite;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.loader {
+}
+
+.loader-boundry {
+  position: relative;
+  margin: 100px auto;
+  width: 50px;
+  height: 50px;
+  list-style: none;
+}
+
+.loader-boundry li:nth-child(1) {
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  -ms-animation-delay: 0.25s;
+  -o-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+.loader-boundry li:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.loader-boundry li:nth-child(3) {
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  -ms-animation-delay: 0.75s;
+  -o-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+.loader-boundry li:nth-child(4) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.loader-boundry li:nth-child(5) {
+  -webkit-animation-delay: 1.25s;
+  -moz-animation-delay: 1.25s;
+  -ms-animation-delay: 1.25s;
+  -o-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+}
+
+@-webkit-keyframes rota {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rota {
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes rota {
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rota {
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes rota {
+  to {
+    transform: rotate(360deg);
+  }
+}
+}

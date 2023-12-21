@@ -1,0 +1,9 @@
+.HomePage {
+  /* margin-left: 250px; */
+}
+
+@media screen and (max-width: 1000px) {
+  .HomePage {
+    margin-left: 0px;
+  }
+}
