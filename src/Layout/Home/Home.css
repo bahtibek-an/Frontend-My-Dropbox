@@ -1,0 +1,11 @@
+.create-uploading-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .HomePage {
+    margin-left: 0px;
+  }
+}

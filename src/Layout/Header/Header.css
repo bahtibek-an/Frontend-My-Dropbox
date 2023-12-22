@@ -1,0 +1,19 @@
+.header-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  color: #fff;
+}
+.header-side .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header-side .buttons button {
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 18px;
+}

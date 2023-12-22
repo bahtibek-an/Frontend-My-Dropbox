@@ -1,0 +1,58 @@
+header {
+  padding: 17px;
+  z-index: 1;
+  background-color: rgb(30, 29, 29);
+  color: #fff;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .dropdown img {
+  width: 35px;
+  cursor: pointer;
+}
+header .btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.btn span {
+  font-size: 20px;
+}
+
+header .dropdown-menu {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+  background-color: rgb(31, 30, 30);
+  padding: 25px;
+  z-index: 99;
+}
+header .dropdown-menu.active {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+}
+header .dropdown-menu li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0;
+  gap: 10px;
+  font-size: 20px;
+}
+ul a {
+  color: aliceblue;
+  cursor: pointer;
+  text-decoration: none;
+}
