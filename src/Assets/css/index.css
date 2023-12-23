@@ -1,0 +1,138 @@
+/* global */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/cover.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Quicksand", sans-serif !important;
+}
+
+/* landing page */
+.landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-page h2 {
+  font-size: 3.4rem;
+  letter-spacing: 10px;
+  margin-bottom: 5rem;
+}
+
+.landing-page p {
+  font-size: 1.25rem;
+  max-width: 500px;
+  margin: 0 auto 3rem;
+}
+
+.btn-default {
+  color: #fff;
+  text-shadow: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #000;
+}
+
+.btn-notify {
+  padding: 10px 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+/* folder page */
+.folder-page {
+  background-color: #ffffffaa;
+  border-radius: 5px;
+  min-height: 97vh;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.folder-page h2 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.search-fields button {
+  border: none;
+  outline: none;
+}
+
+.folder-box {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+}
+
+.folder-box span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* files page */
+.files-page {
+  background-color: #ffffffaa;
+  border-radius: 5px;
+  min-height: 97vh;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.files-page h2 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.search-fields button {
+  border: none;
+  outline: none;
+}
+
+.files-box {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.files-box span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* media queries */
+/* mobile device */
+@media (max-width: 575.98px) {
+  .landing-page h2 {
+    font-size: 2.6rem;
+    margin-bottom: 50px;
+  }
+  .landing-page p {
+    font-size: 1.1rem;
+  }
+}

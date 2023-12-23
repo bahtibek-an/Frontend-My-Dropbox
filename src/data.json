@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "firstName": "jon",
+    "lastName": "snow",
+    "city": "winterfell"
+  },
+  {
+    "id": 2,
+    "firstName": "mike",
+    "lastName": "el",
+    "city": "winterfell"
+  },
+  {
+    "id": 3,
+    "firstName": "steve",
+    "lastName": "harington",
+    "city": "hawkins"
+  },
+  {
+    "id": 4,
+    "firstName": "vignesh",
+    "lastName": "waran",
+    "city": "kumbakonam"
+  },
+  {
+    "id": 5,
+    "firstName": "rachel",
+    "lastName": "daisy",
+    "city": "thirupathurai"
+  },
+  {
+    "id": 6,
+    "firstName": "sethupathy",
+    "lastName": "pappu",
+    "city": "KGF"
+  },
+  {
+    "id": 7,
+    "firstName": "swati",
+    "lastName": "swati",
+    "city": "mannarkudi"
+  },
+  {
+    "id": 8,
+    "firstName": "krishna",
+    "lastName": "kumar",
+    "city": "swamimalai"
+  },
+  {
+    "id": 9,
+    "firstName": "divya",
+    "lastName": "divya",
+    "city": "natchiyar kovil"
+  },
+  {
+    "id": 10,
+    "firstName": "lokesh",
+    "lastName": "loki",
+    "city": "thanjore"
+  }
+]
