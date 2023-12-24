@@ -1,5 +1,7 @@
 Welcome to My Dropbox
-dropbox_app
+Klimov Denislam; 
+Astrum student;
+ project dropbox_app_clone;
 
 Task
 Amazon has a free tier. You should be able to host it for 0$. :
@@ -12,7 +14,9 @@ Serverless computing is a method of providing backend services on an as-used bas
 Installation
 <-- npm i --> 
 <-- npm run start -->
-Netlify_dropbox_URL"https://denislam-dropbox.netlify.app/";
+
+demo
+Netlify_dropbox_URL <--" https://klimov-denislam-dropbox-clone.netlify.app  "-->;
 
 Usage
 A fully hosted version in the cloud. (at least until the correction happened)
