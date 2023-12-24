@@ -1,0 +1,50 @@
+.home {
+    height: 100vh;
+}
+
+.home-menu {
+    padding-top: 220px;
+    font-size: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uploading-file-box button {
+    background-color: #1677ff;
+    color: white;
+}
+
+.home-file-upload-input {
+    padding: 4px;
+    margin: 10px 10px;
+    border: 2px solid #1677ff;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #000000;
+    outline: none;
+}
+
+.home-file-upload-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.home-file-upload-input.error {
+    border-color: #ff0000;
+}
+
+.home-upload-button {
+    background-color: #1677ff;
+    color: #fff;
+    border: none;
+    border-radius: none;
+}
+
+.home-title{
+    margin: 0 auto;
+}
