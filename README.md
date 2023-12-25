@@ -1,47 +1,82 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
-
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
-
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
-
-=> File synchronization, that sounds cool!
-
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
-
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
-
-Let's implement a file synchronization using Amplify & Lambda & S3
-
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+## Welcome to My Dropbox
+***
 
 
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
+## Link http://ozodbebu.beget.tech/
 
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
 
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
+## Task
+The task of this project is to create a Dropbox clone using the Laravel framework, providing users with a cloud storage 
+solution that allows them to upload, manage, and share their files and folders.
 
-The url of your project will be store inside the readme.
+## Description
+This project aims to replicate the core functionality of Dropbox, which includes features like user registration and 
+authentication, file and folder management, file upload and download, sharing files and folders with other users, and 
+version history tracking. It addresses the challenge of building a robust file storage and sharing platform while maintaining 
+security and performance.
 
-No more than 1 components per file.
-Additionals components will be in `src/components/`
+## Installation
+To install this project, follow these steps:
+1. Clone the repository to your local machine:
+   
 
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
+   git clone <repository_url>
+   
+2. Navigate to the project directory:
+   
 
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
+   cd dropbox-clone-laravel
+   
+3. Install Composer dependencies:
+   
 
-On the css/colors/design, you can be creative.
+   composer install
+   
+4. Create a copy of the .env.example file and name it .env:
+   
+
+   cp .env.example .env
+   
+5. Generate an application key:
+   
+
+   php artisan key:generate
+   
+6. Configure your database connection by updating the .env file with your database credentials.
+7. Migrate and seed the database:
+   
+
+   php artisan migrate --seed
+   
+8. Start the Laravel development server:
+   
+
+   php artisan serve
+   
+9. Access the application in your web browser at http://localhost:8000.
+
+## Usage
+This Dropbox clone provides the following functionalities:
+1. User Registration and Authentication: Users can create accounts and log in securely.
+
+2. File and Folder Management: Users can upload, organize, and manage their files and folders in a hierarchical structure.
+
+3. File Upload and Download: Users can upload files to their storage and download them as needed.
+
+4. Sharing Files and Folders: Users can share files and folders with other registered users, allowing collaborative access.
+
+5. Version History Tracking: The system keeps track of file versions, enabling users to revert to previous versions if needed.
+
+6. User Profile: Users can update their profiles, including profile pictures and personal information.
+
+7. Search Functionality: Users can search for files and folders by name or keywords.
+
+For example, to upload a file using the command line, you can use the following command:
+
+./my_project upload /path/to/file.jpg
+
+### The Core Team
+
+
+<span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
+<span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px' /></span>
