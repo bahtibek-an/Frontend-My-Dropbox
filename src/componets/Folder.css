@@ -1,0 +1,41 @@
+.folder_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.folder_div h2 {
+    color: red;
+}
+
+.folder_div div {
+    width: 900px;
+    text-align: center;
+}
+
+.viewDiv {
+    width: 900px;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewDiv div {
+    width: 150px;
+    height: 150px;
+}
+
+.viewDiv p {
+    margin: 0;
+}
+
+.btn{
+    background-color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+}

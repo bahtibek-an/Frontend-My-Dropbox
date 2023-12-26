@@ -1,0 +1,153 @@
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.m_left {
+    position: absolute;
+    width: 280px;
+    height: 100%;
+    padding: 20px 10px;
+    background-color: rgb(235, 233, 218);
+}
+
+.m_left button {
+    background-color: inherit;
+    border: none;
+}
+
+.m_right {
+    position: absolute;
+    top: 0;
+    left: 280px;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+}
+
+.ce-up-del {
+    display: flex;
+    padding: 50px 30px;
+}
+
+.ce-up-del > div {
+    width: 130px;
+    height: 80px;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.ce-up-del > div:hover {
+    background-color: #dbdbdb;
+}
+
+.creating-folder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creating-folder img {
+    cursor: pointer;
+}
+
+.creating-folder > div {
+    background-color: #fff;
+    width: 400px
+}
+
+.cre_header {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.creating-folder p, .creating-folder input {
+    margin-left: 20px;
+}
+
+.creating-folder input {
+    display: block;
+    width: 360px;
+    height: 34px;
+    margin-bottom: 40px;
+}
+
+.creating-folder button{
+   display: inline-block; 
+   float: right;
+   margin-right: 20px;
+   padding: 7px 14px;
+   border: none;
+   font-weight: 600;
+   background-color: rgb(235, 233, 218);
+   margin-bottom: 30px;
+}
+
+.fold {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fold:hover {
+    background-color: #dbdbdb;
+}
+
+.fold p, h3 {
+    margin: 8px;
+}
+
+.titl {
+    margin: 20px 8x;
+}
+
+.fold button {
+    color: #000;
+    background-color: inherit;
+    width: 30px;
+    padding: 0;
+}
+
+
+.view {
+    max-width: 800px;
+    height: auto;
+    padding: 20px;
+}
+
+.viewFol {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.viewFol div {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.viewFol div p {
+    margin: 0;
+}
+
+.out {
+    position: fixed;
+    top: 10px;
+    right: 10px
+}
+

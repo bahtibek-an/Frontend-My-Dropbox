@@ -1,0 +1,19 @@
+.fold {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fold:hover {
+    background-color: #dbdbdb;
+}
+
+.fold p {
+    margin: 8px;
+}
+
+.folderIcon {
+    width: 20px;
+    margin: 0;
+}
