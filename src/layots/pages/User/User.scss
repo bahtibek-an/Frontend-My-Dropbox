@@ -1,0 +1,30 @@
+/** @format */
+
+.user {
+  display: flex;
+  .user__container {
+    width: 100%;
+    // display: flex;
+    // align-items: center;
+    justify-content: center;
+    .form {
+      width: 100%;
+      margin: 200px auto;
+      height: 300px;
+      max-width: 600px;
+      border-radius: 15px;
+      background-color: #00000014;
+      padding: 10px;
+    //   box-shadow: 60px -6px ;
+    Form{
+        Input{
+            margin: 0px 0px;
+        }
+        Button{
+            width: 100%;
+
+        }
+    }
+    }
+  }
+}

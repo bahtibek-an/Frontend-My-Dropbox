@@ -1,0 +1,37 @@
+/** @format */
+
+.navigators{
+  display: flex;
+  margin: 10px 0;
+  gap: 10px;
+  cursor: pointer;
+}
+.folders {
+  display: flex;
+  // flex-direction: column;
+  padding: 10px;
+  .ul {
+    display: flex;
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+    .span {
+      cursor: pointer;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 10px;
+      border: none;
+      text-align: center;
+      list-style-type: none;
+      background-color: #00000014;
+    }
+  }
+}
+.icon_con {
+  height: 80px;
+  width: 80px;
+  img {
+    width: 100%;
+  }
+}
