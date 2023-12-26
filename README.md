@@ -1,32 +1,18 @@
 # Welcome to My Instagram
 
-``` 
-    ██╗███╗░░██╗░██████╗███████╗░█████╗░░██████╗░██████╗░░█████╗░███╗░░░███╗
-    ██║████╗░██║██╔════╝╚══██╔══╝██╔══██╗██╔════╝░██╔══██╗██╔══██╗████╗░████║
-    ██║██╔██╗██║╚█████╗░░░░██║░░░███████║██║░░██╗░██████╔╝███████║██╔████╔██║
-    ██║██║╚████║░╚═══██╗░░░██║░░░██╔══██║██║░░╚██╗██╔══██╗██╔══██║██║╚██╔╝██║
-    ██║██║░╚███║██████╔╝░░░██║░░░██║░░██║╚██████╔╝██║░░██║██║░░██║██║░╚═╝░██║
-    ╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝
-```
-
 ## Task
-Create Instagram Clone Application
+Create Dropbox Clone Application
 - Login, Signup
 - Change you password
-- Indicates that users exists as you type username when signing up 
-- Follow, Unfollow, Recommend, Profile views, Block, Unblock
-- Like, Comment (Sticker, Text, Image), Share, Unshare, Remove share, Tag, Untag, Remove tag, Copy post link, Delete post, Edit post, Open post
-- Time ago format used everywhere
-- Edit your profile (From username, Bio, social links to tags)
-- Get suggestions on whome to follow (you can also refresh suggestions)
-- Shows images in Theatre mode
-- Explore people, photos, videos, audios and groups
-- Message emoji, Text, Image, Sticker
-- Search users, groups and hashtags
+- Folder navifation
+- Upload file
+- Copy link
+- Delete file
+- Preview file
     
 ## Description
 [Demo Link](https://dropbox-orcin.vercel.app/)
-In This Project has been used dependencies react-loading-skeleton, uuid, firebase
+In This Project has been used dependencies firebase
 
 ## Installation
 ```
