@@ -18,6 +18,15 @@ class Navbar extends React.Component {
                     </b>
                 </a>
                 <div className="float-end">
+                <a
+                        href="#upload"
+                        type="button"
+                        className="btn btn-outline-primary m-1"
+                        data-bs-toggle="modal"
+                        data-bs-target="#newFolder"
+                    >
+                        <b>Create Folder</b>
+                    </a>
                     <a
                         href="#upload"
                         type="button"

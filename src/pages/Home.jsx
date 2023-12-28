@@ -1,183 +1,179 @@
-import React, { useState, useEffect } from "react";
-import { getAuth } from "firebase/auth";
-import {
-	getStorage,
-	ref,
-	listAll,
-	uploadBytesResumable,
-	getDownloadURL,
-	deleteObject,
-	getMetadata,
-} from "firebase/storage";
+import { Component } from "react";
 import Navbar from "../components/Navbar";
+import { getStorage, ref, getDownloadURL, uploadBytes, listAll } from "firebase/storage";
 
-const Home = () => {
-	const [selectedFile, setSelectedFile] = useState(null);
-	const [userFiles, setUserFiles] = useState([]);
 
-	useEffect(() => {
-		retrieveUserFiles();
-	}, []);
+export default class Home extends Component {
+	constructor(props) {
+		super(props);
 
-	const handleFileChange = (event) => {
-		setSelectedFile(event.target.files[0]);
-	};
+		this.state = {
+			files: [],
+			uploadFile: null,
+			newFolderName: null,
+		};
 
-	const handleUpload = () => {
-		if (selectedFile) {
-			const storage = getStorage();
-			const storageRef = ref(storage, "Files/" + selectedFile.name);
-			const uploadTask = uploadBytesResumable(storageRef, selectedFile);
 
-			uploadTask.on(
-				"state_changed",
-				null,
-				(error) => {},
-				() => {
-					retrieveUserFiles();
-				}
-			);
+		this.handleUploadFile = this.handleUploadFile.bind(this);
+		this.handleNewFolder = this.handleNewFolder.bind(this);
+	}
+
+	getPath() {
+		const searchParams = new URLSearchParams(window.location.search);
+		let path = searchParams.get('path');
+		if (path) {
+			return 'Files/' + path + '/';
 		} else {
-			console.warn("No file selected!");
+			return 'Files/';
+		}
+	}
+
+	handleFileChange = (e) => {
+		if (e.target.files[0]) {
+			this.setState({ uploadFile: e.target.files[0] });
 		}
 	};
 
-	const retrieveUserFiles = () => {
-		const user = getAuth().currentUser;
-		if (user) {
+	handleNewFolderNameChange = (e) => {
+		if (e.target.value) {
+			this.setState({ newFolderName: e.target.value });
+		} else {
+			this.setState({ newFolderName: null });
+		}
+	}
+
+	async handleNewFolder() {
+		if (this.state.newFolderName) {
 			const storage = getStorage();
-			const filesRef = ref(storage, "Files");
+			const rootRef = ref(storage);
+			const path = this.getPath() + this.state.newFolderName + '/.newfolderinit';
+			const storageRef = path ? ref(rootRef, path) : rootRef;
 
-			listAll(filesRef)
-				.then((res) => {
-					const promises = res.items.map((item) =>
-						getDownloadURL(item).then((url) => ({
-							name: item.name,
-							url: url,
-						}))
-					);
-					return Promise.all(promises);
-				})
-				.then((fileData) => {
-					setUserFiles(fileData);
-				})
-				.catch((error) => {});
+			try {
+				await uploadBytes(storageRef, new Uint8Array());
+			} catch (error) {
+				console.error(error);
+			}
+
+			this.setState({ newFolderName: null });
+			await this.handleLoadFiles();
 		}
-	};
+	}
 
-	const openFile = (url) => {
-		window.open(url, "_blank");
-	};
+	async handleUploadFile() {
+		if (this.state.uploadFile) {
+			const storage = getStorage();
+			const rootRef = ref(storage);
+			const path = this.getPath() + this.state.uploadFile.name;
+			const storageRef = path ? ref(rootRef, path) : rootRef;
 
-	const deleteFile = (fileName) => {
+			try {
+				await uploadBytes(storageRef, this.state.uploadFile);
+			} catch (error) {
+				console.error(error);
+			}
+
+			await this.handleLoadFiles();
+		}
+	}
+
+	async handleLoadFiles() {
 		const storage = getStorage();
-		const fileRef = ref(storage, "Files/" + fileName);
+		const storageRef = ref(storage, this.getPath());
 
-		getMetadata(fileRef)
-			.then(() => {
-				deleteObject(fileRef)
-					.then(() => {
-						retrieveUserFiles();
-					})
-					.catch((error) => {});
-			})
-			.catch((error) => {});
-	};
+		try {
+			const items = await listAll(storageRef);
 
-	return (
-		<div className="body">
-			<Navbar />
+			const files = [];
 
-			<div className="">
-				<h1 className="text-center text-white mt-4"><b>Your Files</b></h1>
+			for (const item of items.items) {
+				const downloadURL = await getDownloadURL(item);
+				files.push({
+					name: item.name,
+					downloadURL,
+					isDirectory: false,
+				});
+			}
 
-				<div className="d-flex justify-content-center">
-					{userFiles.length === 0 ? (
-						<h1 className="text-center text-dark mt-4">No File</h1>
-					) : (
-						userFiles.map((file, index) => (
-							<div className="m-4" key={index}>
-								<div className="card" style={{ width: "130px" }}>
-									<img
-										onClick={() => openFile(file.url)}
-										width={100}
-										height={50}
-										style={{ width: "128px", height: "130px" }}
-										src="https://pixy.org/src/452/thumbs350/4522322.jpg"
-										alt=""
-									/>
-									<br />
-									<p
-										style={{
-											width: "110px",
-											overflow: "hidden",
-											whiteSpace: "nowrap",
-											textOverflow: "ellipsis",
-											textAlign: "center",
-										}}
-									>
-										{file.name}
-									</p>
-									<button
-										className="btn btn-danger"
-										onClick={() => deleteFile(file.name)}
-									>
-										Delete
-									</button>
+			for (const item of items.prefixes) {
+				files.push({
+					name: item.name,
+					isDirectory: true,
+				});
+			}
+
+			this.setState({ files });
+		} catch (error) {
+			console.error("Error listing files: ", error);
+		}
+	}
+
+
+	componentDidMount() {
+		this.handleLoadFiles();
+	}
+
+	render() {
+		return (
+			<>
+				<Navbar />
+				<div className="container">
+					<h2>Files in Firebase Storage:</h2>
+					<div className="list-group">
+						{this.state.files.length > 0 ? this.state.files.map((file, index) => (
+							<a key={index} href={file.isDirectory ? '?path=/' + file.name : file.downloadURL} target={ file.isDirectory ? '_self' : '_blank' } rel={ file.isDirectory ? '' : "noopener noreferrer" } className={`list-group-item list-group-item-action d-flex`} style={{ gap: 16 }}>
+								{ file.isDirectory ? <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+  <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
+</svg> : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
+  <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+</svg> }
+								<span>{file.name}</span>
+							</a>
+						)) : <p key={0} className="list-group-item list-group-item-action">Nothing found here</p>}
+
+					</div>
+				</div>
+
+				<div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div className="modal-dialog">
+						<div className="modal-content">
+							<div className="modal-header">
+								<h5 className="modal-title" id="exampleModalLabel">File Upload</h5>
+								<button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div className="modal-body">
+								<input type="file" className="form-control" onChange={this.handleFileChange} />
+							</div>
+							<div className="modal-footer">
+								<div className="d-flex" style={{ 'gap': 16 }}>
+									<button type="button" className="btn btn-success" data-bs-dismiss="modal" onClick={this.handleUploadFile} disabled={this.state.uploadFile == null}>Upload</button>
+									<button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 								</div>
 							</div>
-						))
-					)}
-				</div>
-			</div>
-
-			<div
-				className="modal fade"
-				id="exampleModal"
-				tabIndex="-1"
-				aria-labelledby="exampleModalLabel"
-				aria-hidden="true"
-			>
-				<div className="modal-dialog">
-					<div className="modal-content">
-						<div className="modal-header">
-							<h1 className="modal-title fs-5" id="exampleModalLabel">
-								File Upload
-							</h1>
-							<button
-								type="button"
-								className="btn-close"
-								data-bs-dismiss="modal"
-								aria-label="Close"
-							></button>
-						</div>
-						<div className="modal-body">
-							<div className="">
-								<input type="file" onChange={handleFileChange} />
-							</div>
-						</div>
-						<div className="modal-footer">
-							<button
-								type="button"
-								className="btn btn-secondary"
-								data-bs-dismiss="modal"
-							>
-								Close
-							</button>
-							<button
-								className="btn btn-success"
-								onClick={handleUpload}
-								data-bs-dismiss="modal"
-								aria-label="Close"
-							>
-								Upload
-							</button>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	);
-};
 
-export default Home;
+				<div className="modal fade" id="newFolder" tabIndex="-1" aria-labelledby="newFolderLabel" aria-hidden="true">
+					<div className="modal-dialog">
+						<div className="modal-content">
+							<div className="modal-header">
+								<h5 className="modal-title" id="newFolderLabel">Create folder</h5>
+								<button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div className="modal-body">
+								<input type="text" placeholder="New folder name" className="form-control" onChange={this.handleNewFolderNameChange} value={ this.state.newFolderName || '' }/>
+							</div>
+							<div className="modal-footer">
+								<div className="d-flex" style={{ 'gap': 16 }}>
+									<button type="button" className="btn btn-success" data-bs-dismiss="modal" onClick={this.handleNewFolder} disabled={this.state.newFolderName == null}>Create folder</button>
+									<button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</>
+		);
+	}
+}
