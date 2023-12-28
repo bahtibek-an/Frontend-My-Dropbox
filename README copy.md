@@ -1,9 +1,6 @@
 # Welcome to My Dropbox
 Welcome To My project Dropbox.
 
-## Demo
-click to this link https://alijon-drop.netlify.app/
-
 ## Task
 Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
 
@@ -26,13 +23,13 @@ npm start
 ```
 
 ## Usage
-Click on the <a href="https://alijon-drop.netlify.app/">link </a> and try it.
+Click on the <a href="(https://xoliqov-dropbox.netlify.app/)">link </a> and try it.
 ```
 ./my_project argument1 argument2
 ```
 
 ### The Core Team
-Did it Alijon Tugalov tugalov_a.
+Mamur G'yibnazarov goyibna_ma.
 
 <span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
 <span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px'></span>
