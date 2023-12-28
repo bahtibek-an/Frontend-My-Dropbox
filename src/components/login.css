@@ -1,0 +1,15 @@
+.text-2{
+  color: black;
+  margin-top: 20px;
+}
+.card-2{
+  border-radius:12px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.284);
+}
+li{
+  list-style: none;
+}
+.input{
+  outline: none;
+}

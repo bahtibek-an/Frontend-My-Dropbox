@@ -1,0 +1,37 @@
+.cards_3{
+  border-radius: 8px;
+}
+.link{
+  text-decoration: none;
+}
+.btn-save{
+  background-color: rgb(5, 178, 121);
+  border-radius: 12px;
+  color: white;
+  border: none;
+}
+.links-1{
+  background-color: rgba(81, 81, 81, 0.733);
+  border-radius: 12px;
+  color: rgb(0, 0, 0);
+  border: none;
+  margin-right: 10px;
+  height: 43px;
+  padding: 12px;
+}
+.btn-logout{
+  background-color: rgb(255, 0, 0);
+  border-radius: 12px;
+  color: white;
+  border: none;
+}
+.cards-4{
+  border-radius: 12px;
+  height: 350px;
+  padding: 20px;
+  width: 450px;
+  background-color: rgba(0, 0, 0, 0.284);
+}
+li{
+  list-style: none;
+}

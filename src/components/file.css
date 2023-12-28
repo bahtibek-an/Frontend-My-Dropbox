@@ -1,0 +1,27 @@
+.inputs{
+  color: white;
+  width: 300px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: rgb(86, 86, 86);
+}
+body{
+  width: 100%;
+}
+.file-4{
+  background-color: rgba(0, 0, 0, 0.311);
+  border-radius: 12px;
+}
+li{
+  margin: 10px;
+
+}
+li{
+  list-style: none;
+}
+li a{
+  text-decoration: none;
+  transition: 0.2s;
+}
