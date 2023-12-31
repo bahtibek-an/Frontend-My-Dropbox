@@ -1,0 +1,6 @@
+export const logo = "https://sm.pcmag.com/pcmag_au/review/d/dropbox/dropbox_nxs2.jpg"
+export const dropbox_logo = "https://img.icons8.com/ios-filled/50/dropbox.png"
+export const upload_file = "https://img.icons8.com/external-flaticons-flat-flat-icons/50/external-upload-web-flaticons-flat-flat-icons-5.png"
+export const all_file = "https://img.icons8.com/fluency/48/documents.png"
+export const trash = "https://img.icons8.com/poly/30/experimental-filled-trash-poly.png"
+export const logout = "https://img.icons8.com/ios/30/exit--v1.png"
