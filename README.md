@@ -1,47 +1,66 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
+# Description 
+What is dropbox could be a serverless app?
 This is what it's all about!
 
-### First, what is dropbox? :)
+First, what is dropbox? :)
 Amazon has a free tier. You should be able to host it for 0$. :)
 
 Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
 
 => File synchronization, that sounds cool!
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
+# Tasks
+This project encompasses various tasks, including but not limited to:
 
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
+Serverless Setup: Configuring the application to leverage serverless computing for scalability and cost efficiency.
+File Synchronization: Implementing robust file synchronization mechanisms to ensure seamless data consistency.
+User Interface: Utilizing React and Ant Design (antd) for a modern and intuitive user interface.
+State Management: Employing Redux and Redux Toolkit to efficiently manage application state.
+# Usage
+ so you can view the project = "https://dropx-two.vercel.app/"
+Usage
+To make the most of this project, follow these steps:
 
-Let's implement a file synchronization using Amplify & Lambda & S3
+Clone the Repository:
 
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+bash
+Copy code
+git clone 
+Install Dependencies:
 
+bash
+Copy code
+cd your-repo
+npm install
+Run the Application:
 
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
+bash
+Copy code
+npm start
+This will launch the application locally.
 
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
+Explore and Contribute:
+Explore the features and functionalities, and feel free to contribute by submitting pull requests or opening issues.
 
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
+Installation
+To set up this project on your local machine, follow these steps:
 
-The url of your project will be store inside the readme.
+Clone the Repository:
 
-No more than 1 components per file.
-Additionals components will be in `src/components/`
+bash
+Copy code
+git clone 
+Install Dependencies:
 
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
+bash
+Copy code
+cd your-repo
+npm install
+Configure Serverless:
+Ensure you have serverless configured with the appropriate credentials for deployment.
 
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
+Start Development:
 
-On the css/colors/design, you can be creative.
+bash
+Copy code
+npm start
