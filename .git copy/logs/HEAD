@@ -1,0 +1,14 @@
+0000000000000000000000000000000000000000 c3bdbebf69d658ae32c655eb69ee61be16e9aa66 Olimjon <matyoqubuvolimjon@gmail.com> 1703852028 +0300	commit (initial): Finished
+c3bdbebf69d658ae32c655eb69ee61be16e9aa66 0000000000000000000000000000000000000000 Olimjon <matyoqubuvolimjon@gmail.com> 1703852047 +0300	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 c3bdbebf69d658ae32c655eb69ee61be16e9aa66 Olimjon <matyoqubuvolimjon@gmail.com> 1703852047 +0300	Branch: renamed refs/heads/master to refs/heads/main
+c3bdbebf69d658ae32c655eb69ee61be16e9aa66 fc7f1a339d997266d6d18d8c348d8711a3bcf1d8 Olimjon <matyoqubuvolimjon@gmail.com> 1703852493 +0300	commit: y
+fc7f1a339d997266d6d18d8c348d8711a3bcf1d8 a434a29acc36e9171fa8dcb5bb38d09357cae107 Olimjon <matyoqubuvolimjon@gmail.com> 1703852776 +0300	commit: Yes
+a434a29acc36e9171fa8dcb5bb38d09357cae107 8c11a72bc84665a18ba8041bee89b991198dd25d Olimjon <matyoqubuvolimjon@gmail.com> 1704352838 +0300	commit: fixed bugs
+8c11a72bc84665a18ba8041bee89b991198dd25d 8c11a72bc84665a18ba8041bee89b991198dd25d Olimjon <matyoqubuvolimjon@gmail.com> 1704352979 +0300	checkout: moving from main to Olimjon_Matyoqubov
+8c11a72bc84665a18ba8041bee89b991198dd25d 8c11a72bc84665a18ba8041bee89b991198dd25d Olimjon <matyoqubuvolimjon@gmail.com> 1704353450 +0300	checkout: moving from Olimjon_Matyoqubov to Olimjon_Matyoqubov
+8c11a72bc84665a18ba8041bee89b991198dd25d 8c11a72bc84665a18ba8041bee89b991198dd25d Olimjon <matyoqubuvolimjon@gmail.com> 1704353591 +0300	checkout: moving from Olimjon_Matyoqubov to main
+8c11a72bc84665a18ba8041bee89b991198dd25d 8f2e568e305cf2485b0d332eb0509300d964a76d Olimjon <matyoqubuvolimjon@gmail.com> 1704353627 +0300	commit (amend): fix (updated)
+8f2e568e305cf2485b0d332eb0509300d964a76d 8c11a72bc84665a18ba8041bee89b991198dd25d Olimjon <matyoqubuvolimjon@gmail.com> 1704353651 +0300	checkout: moving from main to Olimjon_Matyoqubov
+8c11a72bc84665a18ba8041bee89b991198dd25d ad2117cae35e364e77207a331cbcd5f8131028aa Olimjon <matyoqubuvolimjon@gmail.com> 1704353659 +0300	commit (amend): fix (updated)
+ad2117cae35e364e77207a331cbcd5f8131028aa ad2117cae35e364e77207a331cbcd5f8131028aa Olimjon <matyoqubuvolimjon@gmail.com> 1704353690 +0300	checkout: moving from Olimjon_Matyoqubov to Olimjon_Matyoqubov
+ad2117cae35e364e77207a331cbcd5f8131028aa 62b4e66a3ca037a577b024b97169e18f8b7ea95e Olimjon <matyoqubuvolimjon@gmail.com> 1704353711 +0300	pull: Merge made by the 'ort' strategy.
