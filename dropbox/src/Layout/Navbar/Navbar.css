@@ -1,0 +1,50 @@
+nav {
+  background-color: #0dff00;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+nav .dropdown {
+}
+nav .dropdown img {
+  width: 35px;
+  cursor: pointer;
+}
+nav .btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+nav .dropdown-menu {
+  position: absolute;
+  right: 1px;
+  bottom: -95px;
+  width: 185px;
+  height: 95px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+  background-color: rgb(47, 255, 0);
+  padding: 10px;
+}
+nav .dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav .dropdown-menu li {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+ul a{
+  color :aliceblue;
+  cursor: pointer;
+  text-decoration: none;
+}
