@@ -1,6 +1,7 @@
 # Welcome to my Dropbox project
 
-![Alt text](image.png)
+### Netlify Website
+[![Netlify Status](https://api.netlify.com/api/v1/badges/82a99237-18c4-48fd-8aa3-e53d6f1b4b11/deploy-status)](https://app.netlify.com/sites/genuine-panda-2673f4/deploys)
 
 # Description
 
