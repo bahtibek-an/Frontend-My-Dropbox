@@ -1,47 +1,33 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
+# Welcome to My Dropbox
+***
+## LINK http://tumaris20.beget.tech/register
 
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
+## Task
+The main task of this project is to create a functional clone of Dropbox using the Laravel 10 framework. The purpose is to provide users with a platform for uploading, previewing, deleting and sharing files, similar to how Dropbox functionalities. By implementing this project, we aim to learn and demonstrate our skills in Laravel and for Frontend ReactJS library development, database management, user authentication, and web interface design.
 
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
+## Description
+My Dropbox Clone is a web application built using Laravel 10 that aims to provide similar file storage, preview of file and delete and sharing capabilities as Dropbox. Users can upload, preview, delete and share files with others. This project was developed as a learning exercise and is not intended for production use.
 
-=> File synchronization, that sounds cool!
+## Installation
+To set up the project locally, follow these steps:
+1. Clone the repository.
+2. Navigate to the project directory: `cd my_dropbox`
+3. Install dependencies: `composer install`
+4. Configure your environment variables: Rename `.env.example` to `.env` and set your database configuration.
+5. Generate application key: `php artisan key:generate`
+6. Run migrations: `php artisan migrate`
+7. Start the development server: `php artisan serve`
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
+## Usage
+Once the project is up and running, you can access it through your web browser:
 
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
-
-Let's implement a file synchronization using Amplify & Lambda & S3
-
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+1. Open your browser and navigate to `http://localhost:8000` (or the URL displayed by `php artisan serve`).
+2. Register an account or log in if you already have one.
+3. Explore the various features, including uploading files, creating folders, and sharing.
 
 
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
+### The Core Team
+Murodova Tumaris - `murodova_t`
 
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
-
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
-
-The url of your project will be store inside the readme.
-
-No more than 1 components per file.
-Additionals components will be in `src/components/`
-
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
-
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
-
-On the css/colors/design, you can be creative.
+<span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
+<span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px'></span>
