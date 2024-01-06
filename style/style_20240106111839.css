@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.5s;
+}
+
+/* Variables */
+:root {
+    --color: #fff;
+    --main-color-first: #FDE789;
+    --main-color-second: #119DA4;
+    --circle-first: rgba(204,255,170,1);
+    --circle-second: rgba(30,91,83,1);
+    --border: rgba(255, 255, 255, 0.18);
+    --background: rgba(255, 255, 255, 0.3);
+    --backdrop-filter-blur: blur(5.5px); 
+    --box-shadow: rgba(21, 24, 67, 0.37);
+}
+
+/* Custom ScrollBar */
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #aeaeae;
+    border-radius: 15px;
+}
+
+::selection{
+  background: rgb(0,123,255,0.3);
+  color: var(--color);
+}
+
+/* main style */
+main {
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+    background: #808080;
+    background-attachment: fixed;
+    color: var(--color);
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* register style */
+main .register {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 0 105px;
+    border: 1px solid rgba(128, 128, 128, 0.438);
+    width: 700px;
+    min-height: 450px;
+    background-color: #363940;
+}
+
+main .register label {
+    color: var(--circle-second);
+}
+
+/* navbar style */
+nav {
+    width: 100%;
+    background: #D3D3D3;
+}
+
+/* main style */
+main .dashboard .container0 {
+    min-height: calc(10vh - 70px);
+    background: #E9ECEF;
+    border-radius: 6px;
+    width: 1260px;
+}
+
+main .dashboard .container0 .d-flex .btn input {
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    top: -900%;
+}
+
+main .dashboard .container1 {
+    width: 100%;
+    color: var(--circle-second);
+    min-height: calc(78vh - 70px);
+    backdrop-filter: var(--backdrop-filter-blur);
+    border-radius: 40px;
+    border: 1px solid var(--border);
+}
+
+main .dashboard .container1 .peer-folder .card {
+    width: 130x;
+    height: 100px;
+    margin: 0 20px 30px 0;
+    background: var(--background);
+    border: 1px solid rgba(128, 128, 128, 0.438);
+    border-radius: 6px;
+}
+
+main .dashboard .container1 .peer-file .card {
+    width: 100%;
+    background: var(--background);
+    padding: 0 10px;
+    
+    backdrop-filter: blur(5.5px);
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.438);
+}
+
+main .dashboard .container1 .peer-folder .card:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+}
