@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CorsConfig>
+    <Cors>
+        <Origins>
+            <Origin>*</Origin>
+        </Origins>
+        <Methods>
+            <Method>GET</Method>
+            <Method>POST</Method>
+            <Method>PUT</Method>
+            <Method>DELETE</Method>
+        </Methods>
+        <Headers>
+            <Header>*</Header>
+        </Headers>
+    </Cors>
+</CorsConfig>

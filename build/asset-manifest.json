@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Frontend-My-Dropbox/static/css/main.43cafdb4.css",
+    "main.js": "/Frontend-My-Dropbox/static/js/main.007de55e.js",
+    "index.html": "/Frontend-My-Dropbox/index.html",
+    "main.43cafdb4.css.map": "/Frontend-My-Dropbox/static/css/main.43cafdb4.css.map",
+    "main.007de55e.js.map": "/Frontend-My-Dropbox/static/js/main.007de55e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43cafdb4.css",
+    "static/js/main.007de55e.js"
+  ]
+}
