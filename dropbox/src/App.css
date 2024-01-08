@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image:"https://shots.codepen.io/WebSonick/pen/nBPZZO-1280.jpg?version=1541772804";
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.upload-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+.homepagg {
+  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+  padding: 20px;
+  border-radius: 10px;
+  color: #444;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  height: 300px;
+  margin-left: 50%;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  background-image: url("../public/back.jpg");
+}
+.homepage{
+  background-image: url("../public/back.jpg");
+  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+  margin-top: -299px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #444;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  height: 300px;
+  width: 40rem;
+  margin-left: 15%;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+}
+.homepagg input{
+  display: flex;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: white;
+}
+.neew{
+  border: 1px solid #555;
+  color: #000000;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  min-height: 5px;
+  width: 12rem;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   /* The image used */
+   background-image: url("../public/image.jpg");
+  
+   /* Add the blur effect */
+ 
+}
+.neew a{
+  display: inline-block;
+width: 100px;
+white-space: nowrap; 
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.neew button{
+  margin-top: -1px;
+  margin: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add more styles as needed */
