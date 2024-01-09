@@ -1,0 +1,80 @@
+.authentication .registration-form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  box-shadow: 0 0 0 1px rgb(226, 226, 226), 0 0 0 0 rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 50%;
+}
+
+.registration-form h1 {
+  font-size: 36px;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.authentication input[type="email"],
+.authentication input[type="text"],
+.authentication input[type="password"] {
+  outline: none;
+  background: none;
+  margin: 0.5rem 2rem;
+  font-size: 24px;
+  padding-left: 5px;
+  border: 1px solid #000000;
+}
+
+.authentication label {
+  margin: 0 2rem;
+}
+
+.authentication span {
+  margin: 0px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+}
+
+.authentication span a {
+  margin-left: 10px;
+}
+
+.authentication button {
+  margin: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: #fff;
+  background-color: #000000;
+}
+
+/*Sign-Up*/
+
+.authentication p {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.authentication .icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+}
+
+.authentication .icons a {
+  font-size: 1rem;
+  margin: 0.2rem;
+}

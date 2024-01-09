@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(255, 255, 255);
+  color: #fff;
+  font: 100%/30px "Giga Sans";
+}
+
+table {
+  background: #ffffff;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 40px left;
+  text-align: left;
+  width: 50%;
+}
+table .folder {
+  cursor: pointer;
+}
+table a {
+  width: 100%;
+}
+td {
+  border: 2px solid rgb(226, 226, 226);
+  border-radius: 20px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+td:first-child {
+  width: 100%;
+}
+
+td:last-child {
+  border-right: 1px solid rgb(226, 226, 226);
+  border-radius: 20px;
+  position: relative;
+}
+
+.fileTable .icons {
+  position: absolute;
+  background-color: rgb(226, 226, 226);
+  padding: 10px;
+  border-radius: 10px;
+  visibility: hidden;
+}
+.fileTable .icons span {
+  color:#000000;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+.fileTable .elipsis {
+  font-size: 1.5rem;
+  display: flex;
+  cursor: pointer
+}
+.fileTable .icons.active {
+  width: 70%;
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+  font-size: 16px;
+}
+.fileTable .icons svg {
+  cursor: pointer;
+  font-size: 18px;
+}
+
