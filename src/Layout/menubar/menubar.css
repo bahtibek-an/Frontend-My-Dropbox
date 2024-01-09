@@ -1,0 +1,60 @@
+header {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  position: relative;
+  padding: 5px;
+}
+
+header .logo img {
+  max-width: 200px;
+  position: static;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .dropdown img {
+  width: 35px;
+  cursor: pointer;
+}
+header .btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.btn span {
+  font-size: 20px;
+}
+
+header .dropdown-menu {
+  position: absolute;
+  right: 0px;
+  border-radius: 10px;
+  bottom: -112px;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgb(226, 226, 226);
+  padding: 10px;
+}
+header .dropdown-menu.active {
+  width: 20%;
+  opacity: 1;
+  visibility: visible;
+}
+header .dropdown-menu li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0;
+  gap: 10px;
+}
+ul a {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  text-decoration: none;
+}
