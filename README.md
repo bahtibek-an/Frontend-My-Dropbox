@@ -1,4 +1,5 @@
-link:https://dropboxsultonxojayev.netlify.app
+link:https://startling-hotteok-512ae0.netlify.app
+PLEASE WAIT LOADING IF IT DOESNT WORK REFRESH PAGE 
 # Description
 Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
 
@@ -12,7 +13,7 @@ If you use it in your local host you need only intsall node_modules with command
 npm i
 ```
 # Usage 
-You can use it via link: "https://dropboxsultonxojayev.netlify.app"
+You can use it via link: "https://startling-hotteok-512ae0.netlify.app"
 
 Or you can use it in localhost with installing node_modules and to see result, write command:
 ```
