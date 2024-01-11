@@ -1,35 +1,58 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import NavBar from './Components/NavBar'
-import Dashboard from './Components/HomePage/Dashboard'
-import SignIn from './Components/auth/SignIn'
-import SignUp from './Components/auth/SignUp'
+import { useState, useEffect } from "react";
+import { Route, Routes, Navigate } from "react-router-dom";
+import "./App.css";
+import Login from "./Layout/Authorization/Login";
+import Home from "./Layout/Home/Home";
+import Register from "./Layout/Authorization/Register";
+import Folder from "./Layout/Folder/Folder";
+import UserPage from "./Layout/UserPage/UserPage";
+import { auth } from "./api/firebase";
 
-import UploadFile from './Components/files/UploadFile'
+function App() {
+  const [user, setUser] = useState(null);
 
-import FilesDisplay from './Components/files/FilesDisplay' 
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        localStorage.setItem("localUser", JSON.stringify(authUser));
+        setUser(authUser);
+      } else {
+        localStorage.removeItem("localUser");
+        setUser(null);
+      }
+    });
 
+    return () => unsubscribe();
+  }, []);
 
-class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <div className="App">
-          <NavBar />
-          <Switch> 
-            <Route path='/signup' component={SignUp} />
-            <Route path='/signin' component={SignIn} />
-            <Route path='/upload' component={UploadFile} />
-            
-            <Route exact path='/files' component={FilesDisplay} />
-           
-            <Route path='/'component={Dashboard} />
-          
-          </Switch>
-        </div>
-      </BrowserRouter>
-    );
-  }
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={user ? <Home /> : <Navigate to="/login" replace />}
+      />
+      <Route
+        path="/register"
+        element={user ? <Navigate to="/" replace /> : <Register />}
+      />
+      <Route
+        path="/login"
+        element={user ? <Navigate to="/" replace /> : <Login />}
+      />
+      <Route
+        path="/home"
+        element={user ? <Home /> : <Navigate to="/login" replace />}
+      />
+      <Route
+        path="/home/user/:id"
+        element={user ? <UserPage /> : <Navigate to="/login" replace />}
+      />
+      <Route
+        path="/home/folder/:id"
+        element={user ? <Folder /> : <Navigate to="/login" replace />}
+      />
+    </Routes>
+  );
 }
 
 export default App;
