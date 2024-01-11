@@ -1,0 +1,18 @@
+  .header-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.header-side .buttons {
+  display: flex;
+  gap: 10px;
+}
+.header-side .buttons button {
+  padding: 7px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+}
