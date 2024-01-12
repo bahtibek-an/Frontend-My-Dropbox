@@ -19,17 +19,17 @@ and I can see who is logged into my account and who is using this feature</h3></
 
 ## Installation
 ```
-<-- git clone https://github.com/denislamkimov/Frontend-My-Dropbox.git"
+ git clone https://github.com/denislamkimov/Frontend-My-Dropbox.git"
 ```
 ```
-<-- cd Frontend-My-Dropbox -->
+cd Frontend-My-Dropbox 
 ```
 
 ```
-<-- npm i -->
+ npm i
 ```
 ```
-<-- npm run -->
+ npm run start
 ```
 
 
