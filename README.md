@@ -36,7 +36,7 @@ and I can see who is logged into my account and who is using this feature</h3></
 ## demo
 <h3><i> Netlify_Dropbox_clone_URL<a href="https://dropbox-klimov.netlify.app/">Dropbox</a></i></h3>
 
-<h3><i> My_Dropbox_Clone_URL<a href="https://github.com/denislamkimov/Frontend-My-Dropbox.git"></i> Go GIthub.com</a></h3><br><br>
+
 
 ## Usage
  <h3><i>You can use my dropbox clone in the Install section.
