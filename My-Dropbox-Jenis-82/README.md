@@ -1,12 +1,12 @@
 # Welcome Dropbox
 
- DEMO       https://jenis-bozdakhov-dropbox.netlify.app/login
+ DEMO       https://jenis-bozdakhov-dropbox.netlify.app
 
 ## Task 
 
-The primary task of this project is to create a cloud-hosted file-sharing platform with user authentication, file upload functionality, versioning support, and DNS/routing capabilities. The goal is to provide a secure and efficient solution for users to manage and share files. This Dropbox project offers a comprehensive cloud-based file-sharing platform with the following features: Secure user authentication ensures that only authorized users can access the file-sharing platform. Users can easily upload files to the platform, facilitating seamless collaboration and sharing. The project incorporates versioning support, allowing users to track and manage different versions of files. Efficient DNS/routing mechanisms are implemented to ensure smooth navigation and accessibility. The hosted version of the project can be accessed at [Project URL](https://your-project-url.com).
-To get started with the project, follow these steps: The project follows a modular structure, with each component contained in its own file. Additional components are placed in the directory. CSS associated with each component is stored in separate files, following the convention of styling. Feel free to be creative with the design, colors, and CSS styles. The project encourages innovative approaches to enhance the user experience.
-The project is fully hosted in the cloud, and the URL can be found at [Project URL](https://your-project-url.com). However, please note that the hosted version will be available until the necessary corrections are made.
+The primary task of this dropbox project is to create a cloud-hosted file-sharing platform with user authentication, file upload functionality, versioning support, and DNS/routing capabilities. The goal is to provide a secure and efficient solution for users to manage and share files. This Dropbox project offers a comprehensive cloud-based file-sharing platform with the following features: Secure user authentication ensures that only authorized users can access the file-sharing platform. Users can easily upload files to the platform, facilitating seamless collaboration and sharing. The project incorporates versioning support, allowing users to track and manage different versions of files. Efficient DNS/routing mechanisms are implemented to ensure smooth navigation and accessibility. The hosted version of the project can be accessed at [Project URL](https://jenis-bozdakhov-dropbox.netlify.app).
+To get started with the project, follow these steps: The project follows a modular structure, with each component contained in its own file. Additional components are placed in the directory. Bootstrap associated with each component is stored in separate files, following the convention of styling. Feel free to be creative with the design, colors, and CSS styles. The project encourages innovative approaches to enhance the user experience.
+The project is fully hosted in the cloud, and the URL can be found at [Project URL](https://jenis-bozdakhov-dropbox.netlify.app). However, please note that the hosted version will be available until the necessary corrections are made.
 
 - Auth
 - Create Folder
