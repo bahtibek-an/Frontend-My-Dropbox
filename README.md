@@ -1,6 +1,17 @@
 # Welcome to My Dropbox
 My Dropbox App
 
+<br />
+<br />
+<br />
+
+# Bugs have been fixed, only the codes have not been uploaded to github.
+
+<br />
+<br />
+<br />
+
+
 ## Task
 
 [Live Demo](https://my-dropbox-tapp.netlify.app)
