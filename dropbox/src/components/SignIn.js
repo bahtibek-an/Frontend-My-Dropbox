@@ -25,9 +25,9 @@ function SignIn() {
 
                 <div className="d-flex justify-content-center align-items-center h-100vh">
                     <div className="d-flex w-75 justify-content-center">
-                        <div className="w-50 ">
+                        {/* <div className="w-50 ">
                             <img src="./dropbox.jpg" className="images" alt="" />
-                        </div>
+                        </div> */}
                         <div class="w-50">
 
 
@@ -46,7 +46,7 @@ function SignIn() {
                             <div class="d-grid gap-2 mt-4">
                                 <button class="btn btn-primary" type="button" onClick={handleClick}>Sign In</button>
                             </div>
-                            <p className="link text-center ">to <Link to="/">Register</Link></p>
+                            <p className="link text-center mt-3">to <Link to="/">Register</Link></p>
                         </div>
                     </div>
                 </div>}

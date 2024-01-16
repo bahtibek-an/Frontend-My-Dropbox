@@ -24,13 +24,13 @@ function SignUp() {
             {isAuth ? <Home /> :
                 <div className="d-flex justify-content-center align-items-center h-100vh">
                     <div className="d-flex w-75 justify-content-center">
-                        <div className="w-50">
+                        {/* <div className="w-50">
                             <img src="./dropbox.jpg" className="images" alt="" />
-                        </div>
+                        </div> */}
                         <div class="w-50 ">
 
                             <h1 className="text-center mb-4">
-                                <img className="logo" src="https://static-00.iconduck.com/assets.00/dropbox-icon-2048x2048-rjt8u5st.png" alt="" />
+                                {/* <img className="logo" src="https://static-00.iconduck.com/assets.00/dropbox-icon-2048x2048-rjt8u5st.png" alt="" /> */}
                                 Register
                             </h1>
                             <div class="input-container form-floating mb-3">
@@ -50,7 +50,7 @@ function SignUp() {
                             <div class="d-grid gap-2 mt-4">
                                 <button class="btn btn-primary" type="button" onClick={handleClick}>Sign In</button>
                             </div>
-                            <p className="link text-center ">to <Link to="/signin">Login</Link></p>
+                            <p className="link text-center  mt-3">to <Link to="/signin">Login</Link></p>
                         </div>
                     </div>
                 </div>}
