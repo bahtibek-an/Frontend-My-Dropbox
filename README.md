@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# Welcome to My Pokemon App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Task
+Create a serverless file synchronization app using AWS Amplify, Lambda, and S3, with user authentication, file upload, versioning, and DNS/routing functionalities. The project will be built using ReactJS for the frontend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
+This project aims to implement a serverless file synchronization application similar to Dropbox. Leveraging the power of AWS Amplify, Lambda, and S3, the app will provide users with a seamless and secure file hosting experience.
 
-## Expanding the ESLint configuration
+## Installation
+Install dependencies: npm install
+Run the app locally: npm start
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usage
+Tap the link to check this app:
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### The Core Team
+Gulnisa Elbaeva (qwasar username: gulnisa_e)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+<span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
+<span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px' /></span>
