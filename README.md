@@ -1,47 +1,44 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
+## Welcome to my Dropbox
+<h3><b><i>Klimov Denislam;</h3></b></i>
+<h3><b><i>student of Astrum;</h3></b></i>
+<h3><b><i>project dropbox_app_clone;</h3></b></i>
 
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
+## Task
+<h3><i>In this assignment, I will create a dropbox clone and give it full functionality.
+And I work with the server</h3></i>
 
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
+## Description
+<h3><i>In my project I developed a cloned version of dropbox.app and this is my dropbox clone
+<h3><b><i>User - authentication</h3></b></i>
+<h3><b><i>File upload</h3></b></i>
+<h3><b><i>Delete the file</h3></b></i>
+<h3><b><i>Copy the file URL</h3></b></i>
+<h3><b><i>I developed all the functions</h3></b></i>
+<h3><i>As for the server, I used Firebase server
+and I can see who is logged into my account and who is using this feature</h3></i>
 
-=> File synchronization, that sounds cool!
+## Installation
+```
+<-- git clone https://github.com/denislamklimov/dropbox.git "
+```
+```
+<-- cd Frontend-My-Dropbox -->
+```
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
-
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
-
-Let's implement a file synchronization using Amplify & Lambda & S3
-
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+```
+<-- npm i -->
+```
+```
+<-- npm run -->
+```
 
 
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
+## demo
+<h3><i> Netlify_Dropbox_clone_URL<a href="https://klimov-dropbox.netlify.app/">Dropbox</a></i></h3>
 
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
 
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
 
-The url of your project will be store inside the readme.
-
-No more than 1 components per file.
-Additionals components will be in `src/components/`
-
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
-
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
-
-On the css/colors/design, you can be creative.
+## Usage
+ <h3><i>You can use my dropbox clone in the Install section.
+Also, you can use my project from the link in the demo.
+Good luck checking out the project and I hope you like it!!!</h3></i>
