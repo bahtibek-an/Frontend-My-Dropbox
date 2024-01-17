@@ -1,47 +1,30 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
+# React + TypeScript + Vite
 
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
+Currently, two official plugins are available:
 
-=> File synchronization, that sounds cool!
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
+## Expanding the ESLint configuration
 
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-Let's implement a file synchronization using Amplify & Lambda & S3
+- Configure the top-level `parserOptions` property like this:
 
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
 
-
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
-
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
-
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
-
-The url of your project will be store inside the readme.
-
-No more than 1 components per file.
-Additionals components will be in `src/components/`
-
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
-
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
-
-On the css/colors/design, you can be creative.
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
