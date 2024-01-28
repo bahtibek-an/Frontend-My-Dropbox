@@ -1,0 +1,121 @@
+body {
+  color: black;
+  font: 100%/50px "Helvetica Neue", helvetica, arial, sans-serif;
+  text-shadow: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+table {
+  border-radius: 7px;
+  background-color: white;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 30px auto;
+  text-align: left;
+  width: 80%;
+}
+
+table td {
+  border-width: 0;
+  border: 1px solid darkgray;
+  border-radius: 7px;
+  background-color: #fff;
+  transition: all 300ms;
+}
+
+table tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+table tr:nth-child(even) td {
+  background-color: #fff;
+}
+
+td:first-child{
+  box-shadow: none;
+}
+
+td:last-child {
+  border-right: 1px solid gray;
+  box-shadow: none;
+  border-width: 1;
+}
+
+
+/* table td:first-child {
+  box-shadow: inset 1px 0 0 #fff;
+  width: 81%;
+} */
+
+/* table td:last-child {
+  border-right: 1px solid red;
+  box-shadow: inset -1px 0 0 red;
+  position: relative;
+} */
+
+/* table tr {
+  background-color: white; */
+/* background: url(https://jackrugile.com/images/misc/noise-diagonal.png); */
+/* } */
+
+/* table tr:nth-child(odd) td {
+  background: w url(https://jackrugile.com/images/misc/noise-diagonal.png);
+} */
+
+/* table tr:last-of-type td {
+  box-shadow: inset 0 -10px 0 red;
+} */
+
+table tbody:hover td {
+  color: transparent;
+  text-shadow: 0 0 3px #aaa;
+}
+
+table tbody:hover tr:hover td {
+  color: #444;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.fileTable .icons {
+  gap: 30px;
+  position: absolute;
+  background-color: white;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  padding: 10px 4px;
+  margin: 5px -8px;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.fileTable .icons.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+}
+
+.fileTable .icons span {
+  /* display: flex; */
+  gap: 30px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fileTable .elipsis {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fileTable .icons svg {
+  cursor: pointer;
+}

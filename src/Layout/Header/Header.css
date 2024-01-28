@@ -1,0 +1,36 @@
+.header-side {
+  margin: 10px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.header-side h1 {
+  margin-left: 10px;
+  font-size: 24px;
+  color:black;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons button {
+  border-width: 0;
+  border-radius: 6px;
+  color: white;
+  margin-left: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+}
+.buttons button:hover{
+  text-shadow: none;
+   background-color: #333;
+}
+
