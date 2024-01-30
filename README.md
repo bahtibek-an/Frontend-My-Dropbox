@@ -2,15 +2,26 @@
 
 Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
 
-=> File synchronization, that sounds cool!
-
 # Task
 
-The challenge was to make the dropbox file manager app with react.js. The app should been work with servers.In the app you can create folder and upload files and manage them.
+The challenge was to make the dropbox file manager app with react.js. The app should been work with servers.In the appyou can do a lot of things in this project like:
+
+Auth (Login and Sign Up)
+Create Folders and delete
+Upload Files and delete
+View Profile
+Edit Profile
+Installation
 
 # Installation
+open a terminal and write the following in the terminal :
+
+git branch "(link of my project)" 
+
+code . to open in VS Code
 
 cd to the rpoject
+
 npm install
 
 # Usage
