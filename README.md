@@ -1,47 +1,30 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
+Welcome to My Dropbox
+demo:https://stalwart-tiramisu-4db89a.netlify.app
+## Task
 
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
+The main objective of this project is to create a cloud storage platform similar to Dropbox, facilitating easy file sharing and collaboration.
 
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
+## Description
 
-=> File synchronization, that sounds cool!
+My Dropbox is a web-based platform designed to help users store, share, and collaborate on files and documents seamlessly. Users can upload, download, and organize their files while collaborating with others in real-time.
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
+## Installation
 
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
+To get started with My Dropbox, follow these installation instructions:
 
-Let's implement a file synchronization using Amplify & Lambda & S3
+1. Navigate to the project directory: `cd DROPBOX_2`
+2. Install dependencies: `npm install`
+3. Configure your environment variables.
+4. Run the application: `npm start`
 
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+## Usage
 
+After installation, use the following command to run the project:
 
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
+```bash
+Visit the application in your web browser at http://localhost:3000 to explore and interact with My Dropbox.
+``````
 
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
-
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
-
-The url of your project will be store inside the readme.
-
-No more than 1 components per file.
-Additionals components will be in `src/components/`
-
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
-
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
-
-On the css/colors/design, you can be creative.
+## The core team
+ #### Project leader : Asad Baxodirzoda
+ #### Project Member : Sagdiana Baxodirzoda
