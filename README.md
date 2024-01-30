@@ -16,7 +16,7 @@ Installation
 # Installation
 open a terminal and write the following in the terminal :
 
-git branch "(link of my project)" 
+git clone "(link of my project)" 
 
 code . to open in VS Code
 
