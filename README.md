@@ -1,4 +1,5 @@
 # Welcome to My Frontend Dropbox
+https://dropbox-qws-clone.netlify.app/login
 
 ## Task
 Create a serverless file synchronization app using AWS Amplify, Lambda, and S3, with user authentication, file upload, versioning, and DNS/routing functionalities. The project will be built using ReactJS for the frontend.
@@ -12,10 +13,9 @@ Run the app locally: npm start
 
 ## Usage
 Tap the link to check this app:
-https://qwasar-dropbox-app.netlify.app/login
+https://dropbox-qws-clone.netlify.app/login
 
 ### The Core Team
-Gulnisa Elbaeva 
 Abduganiyeva Gavhar
 
 
