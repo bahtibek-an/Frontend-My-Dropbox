@@ -1,0 +1,84 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./dropbox.gif);
+    background-size: cover; 
+  }
+  
+  .card {
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1,1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .img-container {
+    text-align: center;
+  }
+  
+  .img-container img {
+    width: 100px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    margin-top: 15px;
+    background-color: #00e408;
+    color: #f50f0f;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #ff6347; 
+    color: #fefa14;
+  }
+  
+  .alert {
+    margin-bottom: 15px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .links-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .links-container a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .links-container a:hover {
+    color: #ff6347; 
+  }
+
+  .link-text{
+    color: #000;
+  }
+  
+  

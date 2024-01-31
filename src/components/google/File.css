@@ -1,0 +1,25 @@
+/* Add these styles to your CSS file */
+
+.file-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .file-actions {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .file-actions button {
+    cursor: pointer;
+  }
+  
+  .file-actions button:hover {
+    background-color: #f8f9fa;
+  }
+  
