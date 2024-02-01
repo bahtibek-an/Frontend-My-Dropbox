@@ -1,0 +1,92 @@
+.modal {
+  position: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-inner {
+  background-size: cover;
+  color: blueviolet;
+  box-shadow: rgba(6, 126, 247, 0.952) 0px 8px 24px;
+  width: 600px;
+  min-height: 400px;
+  margin: auto;
+  position: relative;
+  top: 20%;
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.modal.active .modal-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-inner .close-modal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.modal-inner .close-modal svg {
+  font-size: 1.5rem;
+}
+
+.modal-inner .create-folder,
+.modal-inner .upload-file {
+  padding: 20px;
+}
+
+.modal-inner .create-folder h2,
+.modal-inner .upload-file h2 {
+  margin: 10px 0;
+}
+
+.modal-inner .create-folder input,
+.modal-inner .upload-file input {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.modal-inner .create-folder button,
+.modal-inner .upload-file button {
+  background-size: cover;
+  color: gold;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.modal-inner .create-folder button:hover,
+.modal-inner .upload-file button:hover {
+  background-color: rgb(239, 20, 20);
+}
+
+.img__container img {
+  width: 100%;
+  border-radius: 8px;
+}

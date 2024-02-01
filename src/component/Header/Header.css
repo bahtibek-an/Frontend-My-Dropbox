@@ -1,0 +1,30 @@
+.header-side {
+  margin-top: 20px;
+  background-size: cover;
+}
+
+.header-side .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header-side .buttons button {
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  background-size: cover;
+  border-radius: 3px;
+  font-size: 18px;
+  transition: background-color 0.3s ease; 
+}
+
+
+.header-side .buttons button.create:hover {
+  background-color: #00ff00; 
+  transform: scale(1.3);
+}
+
+.header-side .buttons button.upload:hover {
+  background-color: #ff0000; 
+  transform: scale(1.3);
+}
