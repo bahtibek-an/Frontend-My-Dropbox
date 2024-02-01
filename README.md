@@ -1,47 +1,52 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
+# Welcome to My Dropbox
 
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
+Welcome To Our project Dropbox.
+
+## Demo
+
+Welcome to My Dropbox 
+
+https://ruxshona-droper-box.netlify.app
+
+## Task
 
 Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
 
-=> File synchronization, that sounds cool!
+## Description
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
+You can do several things in this project ex...
 
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
+- Auth (Login and Sign Up)
+- Create Folders and delete
+- Upload Files and delete
+- View Profile
+- Edit Profile
 
-Let's implement a file synchronization using Amplify & Lambda & S3
+## Installation
 
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+first yo need install to node modules. for install you need write
 
+```
+npm i
+```
 
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
+and for start
 
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
+```
+npm start
+```
 
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
+## Usage
 
-The url of your project will be store inside the readme.
+Click on the <a href="https://dropboks.netlify.app/">link </a> and try it.
 
-No more than 1 components per file.
-Additionals components will be in `src/components/`
+```
+./my_project argument1 argument2
+```
 
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
+### The Core Team
 
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
+Shoergasheva Ruxshona & Zuhra 
 
-On the css/colors/design, you can be creative.
+<span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
+<span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px'></span>
