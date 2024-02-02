@@ -1,47 +1,86 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
+# Dropbox Clone 
 
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
+This project is a Dropbox clone built using the Laravel framework for the backend and Vue.js for the frontend. The application provides user authentication, folder creation, file uploads, sharing, viewing, downloading, and deletion features. It also includes a "trash" section where deleted items are stored, allowing users to either restore or permanently delete them. Additionally, the project supports the ability to choose multiple files or folders for download, which are then packaged into a zip file.
 
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
+## Task
+Create a Dropbox clone that offers the following features:
+- User Authentication
+- Folder Creation and Uploading
+- Support for Various File Types
+- File and Folder Sharing
+- Viewing, Downloading, and Deleting Files and Folders
+- Trash Section for Deleted Items
+- Restoration and Permanent Deletion from the Trash
+- Selection of Multiple Files or Folders for Download
+- Downloaded Items Packaged in Zip Format
 
-=> File synchronization, that sounds cool!
+## Description
+This Dropbox clone is a web-based file storage and sharing application that replicates the core functionalities of Dropbox. Users can securely authenticate, create folders, and upload various file types. The application supports sharing files and folders, as well as providing the ability to view, download, and delete them.
+Deleted items are moved to the "trash" section, where users can either restore them to their original location or permanently delete them. The project also includes the functionality to choose multiple files or folders for download, and during the download process, the selected items are bundled into a zip file for easy retrieval.
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
+## Installation
+Follow these steps to set up the Dropbox clone project on your local machine:
 
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/dropbox-clone.git
+   ```
 
-Let's implement a file synchronization using Amplify & Lambda & S3
+2. Navigate to the project directory:
+   ```bash
+   cd dropbox-clone
+   ```
 
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+3. Install PHP dependencies:
+   ```bash
+   composer install
+   ```
+
+4. Copy the `.env.example` file to `.env` and configure the database connection and other necessary settings:
+   ```bash
+   cp .env.example .env
+   ```
+
+5. Generate application key:
+   ```bash
+   php artisan key:generate
+   ```
+
+6. Run database migrations and seed the database:
+   ```bash
+   php artisan migrate --seed
+   ```
+
+7. Install npm dependencies:
+   ```bash
+   npm install
+   ```
+
+8. Compile assets:
+   ```bash
+   npm run dev
+   ```
 
 
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
+## Usage
+Start the development server:
+   ```bash
+   php artisan serve
+   ```
 
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
+Visit `http://localhost:8000` in your web browser. And you can do: 
 
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
+1. **User Authentication:**
+   - Register a new account or log in with existing credentials.
 
-The url of your project will be store inside the readme.
+2. **Folder Creation and Uploading:**
+   - Create new folders or upload files by navigating to the respective sections.
 
-No more than 1 components per file.
-Additionals components will be in `src/components/`
+3. **File and Folder Actions:**
+   - Share, view, download, or delete files and folders.
 
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
+4. **Trash Section:**
+   - Deleted items can be found in the trash section, where they can be restored or permanently deleted.
 
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
-
-On the css/colors/design, you can be creative.
+5. **Multiple Selection for Download:**
+   - Choose multiple files or folders for download, and they will be packaged into a zip file.
