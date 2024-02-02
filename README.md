@@ -1,47 +1,60 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
+Welcome to My Dropbox Clone Task Dropbox Clone with React, Redux Toolkit, Ant Design, and Firebase This project is a clone of Dropbox, leveraging technologies such as React.js, Redux Toolkit, Ant Design, and Firebase. It offers users the ability to seamlessly upload, download, and organize files within a cloud storage environment, ensuring a responsive and efficient user experience.
 
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
+Features User Authentication: Securely authenticate users and manage access to the application using Firebase Authentication.
 
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
+File Upload and Download: Easily upload files to the cloud and download them as needed.
 
-=> File synchronization, that sounds cool!
+Folder Organization: Create folders to organize files, providing users with a structured storage system.
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
+Real-time Updates: Utilize Firebase Realtime Database to ensure immediate updates on file/folder changes across multiple devices.
 
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
+Responsive Design: Take advantage of Ant Design components to create a responsive and user-friendly interface that adapts to different screen sizes.
 
-Let's implement a file synchronization using Amplify & Lambda & S3
+Redux State Management: Implement Redux Toolkit for efficient state management, simplifying the process of handling the application's state.
 
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+Prerequisites Before you start, make sure you have the following installed:
 
+Node.js npm or yarn so you can see from this link https://dropbox-coral.vercel.app/
 
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
+Description
 
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
+This section can provide additional details on how the project solves specific problems or addresses particular challenges.
 
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
+Acknowledgments The project draws inspiration from the functionality and design of Dropbox. Special thanks to the maintainers and contributors of React, Redux Toolkit, Ant Design, and Firebase for their invaluable tools and services.
 
-The url of your project will be store inside the readme.
+Feel free to customize this README to better suit the specifics of your project. Happy coding!
 
-No more than 1 components per file.
-Additionals components will be in `src/components/`
+Installation To install the project, use the following commands:
 
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
+bash Copy code npm install
 
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
+or
+yarn Usage How it Works To use the Dropbox clone, follow these steps:
 
-On the css/colors/design, you can be creative.
+Clone the Repository:
+
+bash Copy code git clone https://github.com/KarimJK/dropbox-clone.git cd dropbox-clone Install Dependencies:
+
+bash Copy code npm install
+
+or
+yarn Set Up Firebase:
+
+Create a new project on the Firebase Console. Obtain your Firebase configuration object. Create a .env file in the project root and add your Firebase configuration. Start the Development Server:
+
+bash Copy code npm start
+
+or
+yarn start so you can see from this link https://dropbox-coral.vercel.app/ User Authentication:
+
+Use Firebase authentication to sign up or log in. Access the main functionality of the application after authentication. Upload and Download Files:
+
+Upload files by clicking the "Upload" button and selecting the desired files. Download files by clicking on the file name. Folder Organization:
+
+Create folders to organize files by clicking the "New Folder" button. Manage files and folders easily using the provided interface. Real-time Updates:
+
+Experience real-time updates when changes occur to files or folders. Responsive Design:
+
+The application is designed to be responsive and should adapt to different screen sizes. Deployment:
+
+If you wish to deploy the application, follow the deployment instructions for your preferred hosting service. Firebase Hosting is recommended for seamless integration. bash Copy code ./my_project argument1 argument2 The Core Team Made at Qwasar SV -- Software Engineering School Qwasar SV -- Software Engineering School's Logo
