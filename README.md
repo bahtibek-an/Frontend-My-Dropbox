@@ -1,8 +1,8 @@
 # Dropbox Clone 
-
-This project is a Dropbox clone built using the Laravel framework for the backend and Vue.js for the frontend. The application provides user authentication, folder creation, file uploads, sharing, viewing, downloading, and deletion features. It also includes a "trash" section where deleted items are stored, allowing users to either restore or permanently delete them. Additionally, the project supports the ability to choose multiple files or folders for download, which are then packaged into a zip file.
+## Link http://sx2803bu.beget.tech/
 
 ## Task
+This project is a Dropbox clone built using the Laravel framework for the backend and Vue.js for the frontend. The application provides user authentication, folder creation, file uploads, sharing, viewing, downloading, and deletion features. It also includes a "trash" section where deleted items are stored, allowing users to either restore or permanently delete them. Additionally, the project supports the ability to choose multiple files or folders for download, which are then packaged into a zip file.
 Create a Dropbox clone that offers the following features:
 - User Authentication
 - Folder Creation and Uploading
