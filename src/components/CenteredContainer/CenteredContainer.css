@@ -1,0 +1,11 @@
+.centered-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: 100vh;
+}
+.centered-con-item{
+    width: auto;
+    max-width: 400px;
+}

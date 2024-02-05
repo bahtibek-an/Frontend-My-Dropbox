@@ -1,0 +1,42 @@
+.profile-container{
+    background: rgb(66,0,255);
+    background: radial-gradient(circle, rgba(66,0,255,1) 0%, rgba(0,11,35,0) 90%);
+}
+.profile-con-item{
+    width: 300px;
+    height: 200px;
+    background-color: #000;
+    border-radius: 10px;
+}
+.profile-con-txt{
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.profile-con-email{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+.profile-con-email > span{
+    color: orangered;
+}
+.profile-con-update{
+    padding: 7px 40px;
+    background-color: yellowgreen;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+.profile-con-out{
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    transition: .5s;
+}
+.profile-con-out:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}

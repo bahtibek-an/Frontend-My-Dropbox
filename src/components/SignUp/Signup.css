@@ -1,0 +1,74 @@
+.up-container{
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+.up-con-item{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+    border-radius: 20px;
+}
+.up-con-name{
+    color: #fff;
+    text-align: center;
+    padding-top: 5%;
+}
+.up-con-input-email{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.up-con-input-pasword{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.up-con-input-txt{
+    color: #fff;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.up-con-input-repasword{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+.up-con-sign{
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 1s;
+}
+.up-con-sign:hover{
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+    border: 1px solid #fff;
+    color: #000851;
+}
+.up-con-in{
+    width: 400px;
+    height: 50px;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}

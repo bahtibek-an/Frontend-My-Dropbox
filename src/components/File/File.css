@@ -1,0 +1,35 @@
+.file-container{
+    width: 1350px;
+    height: 11vh;
+    border: 3px dotted #000;
+    color: #000;
+    transition: .5s;
+    display: flex;
+}
+.file-container-link{
+    /* padding: 10px 100px; */
+    width: 350px;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.file-con-txt{
+    width: 70%;
+    border-right: 3px dotted #000;
+    height: 100%;
+    overflow: hidden;
+}
+.file-container:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.bluee{
+    display: none;
+}
+.file-del-btn{
+    width: 40px;
+    height: 40px;
+    margin-top: 1.5%;
+    color: red  ;
+}

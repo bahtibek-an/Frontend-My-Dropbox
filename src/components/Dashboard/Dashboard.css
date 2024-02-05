@@ -1,0 +1,21 @@
+.dashboard-container{
+    width: 90%;
+    margin-left: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.dashboard-folder-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dashboard-folder{
+    width: auto;
+    max-width: 150px;
+    margin-left: 3%;
+}
+.dashboard-file{
+    width: auto;
+    max-width: 250px;
+    margin-left: 2%;
+}

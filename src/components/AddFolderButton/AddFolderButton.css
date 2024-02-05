@@ -1,0 +1,37 @@
+.addFolder-container{
+    padding: 10px;
+    border: 1px solid dodgerblue;
+    margin-right: 10px;
+    margin-top: 7px;
+    background-color: transparent;
+    color: dodgerblue;
+    margin-left: 90%;
+}
+.addFolder-icon{
+    font-size: 35px; 
+}
+.addFolder-alert{
+    background-color: #000;
+    color: #fff;
+}
+.adFolder-input-name{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.adFolder-input-name > input{
+    outline: none;
+}
+.addFolder-close-btn{
+    background-color: red;
+    color: #fff;
+    border: none;
+
+}
+.addFolder-alert-footer{
+    background-color: #494949;
+    display: flex;
+    justify-content: end;
+}

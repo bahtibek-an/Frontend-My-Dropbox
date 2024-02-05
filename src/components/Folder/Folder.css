@@ -1,0 +1,8 @@
+ #folder-container{
+    padding: 8px 20px;
+    min-width: 100px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    margin-bottom: 10%;
+ }

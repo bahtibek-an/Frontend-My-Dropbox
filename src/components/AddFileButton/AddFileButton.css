@@ -1,0 +1,20 @@
+.addFile-container{
+    color: dodgerblue;
+    padding: 10px;
+    border: 1px solid dodgerblue;
+    margin-top: 1%;
+}
+.addFile-icon{
+    font-size: 35px;
+}
+.addFile-input{
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+}
+.addFile-upload{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    max-width: 350px;
+}
