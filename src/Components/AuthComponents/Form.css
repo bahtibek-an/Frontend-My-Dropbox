@@ -1,0 +1,31 @@
+.form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    height: 330px;
+    width: 400px;
+    background-color: rgb(24, 171, 251);
+    border-radius: 5px;
+}
+.form-wrape{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 30px;
+    align-items: center;
+}
+.form-wrape input {
+    width: 200px;
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.sumbit_btn{
+    padding: 5px 14px;
+    border-radius: 6px;
+    background-color: orange;
+    cursor: pointer;
+}

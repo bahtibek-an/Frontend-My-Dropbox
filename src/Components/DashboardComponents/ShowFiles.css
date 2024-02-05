@@ -1,0 +1,33 @@
+.files-wrape{
+    border: 1px solid #000000af;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+.files{
+    display: flex;
+    gap: 30px;
+}
+
+.filew-wrape-title{
+    margin-bottom: 30px;
+}
+.file{
+    border: 1px solid #bab6b6;
+    padding: 7px 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+}
+
+.folder-icon{
+   font-size: 70px;
+   color: rgb(236, 236, 38);
+}
+.file-icon{
+    font-size: 70px;
+    color: rgb(38, 38, 32);
+}

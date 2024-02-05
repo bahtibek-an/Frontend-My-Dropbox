@@ -1,0 +1,29 @@
+.folder-create-modal{
+    padding: 12px;
+    border-radius: 5px;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 399;
+    background-color: #fff;
+    top: 20%;
+    left: 40%;
+    margin: 0 auto;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.create-folder-input{
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 7px;
+}
+
+.icon{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
