@@ -49,7 +49,7 @@ You run it after downloading the libraries
     yarn start
 
 ### DEMO
-[Netlify](shakhbox-dropbox.netlify.app)
+[Netlify](shahboz-dropbox.netlify.app)
 
 # AUTHOR
 Shamsiddinov Shaxboz

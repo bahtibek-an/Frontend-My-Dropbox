@@ -11,10 +11,19 @@ export default function File({ file }) {
   }
   
 
+  
+
   return (
     <>
       <ul className="file-container">
-        <p className="file-con-txt">{file.url }</p>
+        <button
+          className="file-con-btn"
+          onClick={() => {
+          navigator.clipboard.writeText(file.url);
+           }}
+          >
+            copylink
+        </button>
         <a
           href={file.url}
           className="file-container-link">

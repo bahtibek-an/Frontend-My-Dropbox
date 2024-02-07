@@ -14,6 +14,13 @@
     max-width: 150px;
     margin-left: 3%;
 }
+.dashboard-file-container{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
 .dashboard-file{
     width: auto;
     max-width: 250px;
