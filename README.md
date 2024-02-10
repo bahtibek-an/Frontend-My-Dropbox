@@ -1,47 +1,73 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
+# Welcome to My Dropbox
 
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
+Welcome To My project Dropbox.
 
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
+## Demo
 
-=> File synchronization, that sounds cool!
+Feel free to try the demo version of Dropbox that I created
+**<a  href="https://bokhodirivichm-mydrboxxx.netlify.app">bokhodirivich-mydrboxxx</a>**
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
+## Task
 
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
+Dropbox is a file hosting service that offers cloud storage, file synchronization, private cloud, and client software. A program with the ability to create folders to organize them. My task is to create a demo version of this program. For the database was to use Firebase.
 
-Let's implement a file synchronization using Amplify & Lambda & S3
+## Description
 
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+You can do several things in this project ex...
 
+- [x] Auth (Login and Sign Up)
+- [x] Edit Password
+- [x] Create Folders
+- [x] Create another Folders within a folders
+- [x] Upload Files
+- [x] Delete Files and Folders
+- [x] Download Files
 
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
+## Installation
 
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
+First yo need install to node modules. for install you need write
 
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
+```
+npm i
+```
 
-The url of your project will be store inside the readme.
+and in the vite.js style to begin with
 
-No more than 1 components per file.
-Additionals components will be in `src/components/`
+```
+npm run dev
+```
 
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
+```
+h
+```
 
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
+```
+o
+```
 
-On the css/colors/design, you can be creative.
+It should be pointing to 5173 on localhost. If it doesn't show it's not opening on your device
+
+---
+
+## Usage
+
+**1.** Click the link and register
+
+> **<a  href="https://bokhodirivichm-mydrboxxx.netlify.app">link</a>**
+
+**2.** Give a name for the folder and create the folder
+**3.** Upload your files in any order you want
+**4.** If you made a mistake, try again
+
+### The Core Team
+
+Did it: **Ma'murjon G'oyibnazarov Bokhodrivich**
+Qwasar upskil: **goyibna_ma**
+![enter image description here](https://i.pcmag.com/imagery/reviews/01eqrJlwTzs4ACRmWo01fCt-45.fit_scale.size_760x427.v1668723864.jpg)
+
+<div  style="text-align:center">For this project, just give me your own independent opinion.
+Please help me if there are any errors or omissions
+enter code here
+</div>
+
+- [x] **<a  href="tel: +9981113517">+99888113517</a>**
