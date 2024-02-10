@@ -5,7 +5,7 @@ Welcome To My project Dropbox.
 ## Demo
 
 Feel free to try the demo version of Dropbox that I created
-**<a  href="https://bokhodirivichm-mydrboxxx.netlify.app">bokhodirivich-mydrboxxx</a>**
+**<a  href="https://bokhodrivichm-mydrboxxx.netlify.app/">bokhodirivich-mydrboxxx</a>**
 
 ## Task
 
@@ -53,7 +53,7 @@ It should be pointing to 5173 on localhost. If it doesn't show it's not opening 
 
 **1.** Click the link and register
 
-> **<a  href="https://bokhodirivichm-mydrboxxx.netlify.app">link</a>**
+> **<a  href="https://bokhodrivichm-mydrboxxx.netlify.app/">link</a>**
 
 **2.** Give a name for the folder and create the folder
 **3.** Upload your files in any order you want
