@@ -1,0 +1,45 @@
+.file-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .file-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .file-link {
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: calc(100% - 34px);
+  }
+
+.btn-add-file {
+    font-size: 25px;
+    color: white;
+  }
+  
+  .toast-container {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    max-width: 250px;
+  }
+  
+  .toast-file {
+    margin: 10px 0;
+  }
+  
+  .toast-header {
+    width: 100%;
+  }
+  
+  .progress-bar {
+    max-width: 100%;
+  }
+    

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.text{
+    text-align: center;
+    color: #000;
+    margin-top: 10px;
+}
+.card{
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.input{
+  width: 95%;
+  margin: 10px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.button{
+  margin-top: 10px;
+  background: blue;
+  border: 1px solid black;
+  padding: 10px 0;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  color: #5880a1;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1px 30%;
+  max-width: 400px;
+  width: 100%;
+}

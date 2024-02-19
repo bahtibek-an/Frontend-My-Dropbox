@@ -1,0 +1,26 @@
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  
+  .card {
+    width: 300px;
+  }
+  
+  .text {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .button {
+    width: 100%;
+  }
+  
+  
