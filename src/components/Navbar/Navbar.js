@@ -8,6 +8,9 @@ export default function NavbarComponent() {
       <Link to="/" className="navbar-con-link">
         Dropbox
       </Link>
+      <Link to="/" className="navbar-con-link">
+        Home
+      </Link>
         <Link to="/user" className="navbar-con-profil">
           Profile
         </Link>
