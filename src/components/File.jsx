@@ -14,8 +14,10 @@ const File = ({ file }) => {
 
   const handleDeleteClick = async () => {
     try {
-      const fileRef = storage.ref(`/files/${currentUser.uid}/${file.name}`);
-      // Use deleteObject method directly
+      // Convert file URL to Storage Reference
+      const fileRef = storage.refFromURL(file.url);
+  
+      // Use delete method to delete the file
       await fileRef.delete();
   
       // Delete file entry from Firestore
