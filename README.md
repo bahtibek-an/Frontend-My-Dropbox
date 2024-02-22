@@ -1,47 +1,51 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
+## Frontend My Dropbox
 
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
+This application is designed to provide a user interface for interacting with Dropbox, enabling users to manage their files and folders, upload new files, and organize their storage efficiently.
 
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
+## Hosting Links
 
-=> File synchronization, that sounds cool!
+https://my-dropbox-app-sardorxoja-tojixojayev.netlify.app
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
+## Installation
+To run the application locally, follow these steps:
 
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
+1. Clone the repository:
 
-Let's implement a file synchronization using Amplify & Lambda & S3
+    git clone https://github.com/sardorxoja-tojixojayev/Frontend-My-Dropbox.git
 
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+2. Navigate to the project directory:
 
+    cd Frontend-My-Dropbox
 
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
+3. Install the necessary dependencies:
 
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
+    npm install
 
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
+4. Start the application:
 
-The url of your project will be store inside the readme.
+    npm start
 
-No more than 1 components per file.
-Additionals components will be in `src/components/`
+The app will be accessible at http://localhost:3000 after these steps.
 
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
+## User Guide
+The app offers the following features for users:
 
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
+- **File Management:** View, upload, download, and delete files.
+- **Folder Organization:** Create, rename, and delete folders to organize your files.
+- **Sharing:** Share files and folders with others via links or email invitations.
+- **Collaboration:** Collaborate on files with others in real-time using shared folders.
+- **Search Functionality:** Search for specific files or folders based on keywords or names.
 
-On the css/colors/design, you can be creative.
+## Project Structure
+
+The project structure is organized as follows:
+
+- **src/components:** Contains React components.
+- **src/services:** Includes services for communication with the Dropbox API.
+- **src/styles:** Holds CSS and styling files.
+- **public:** Contains the main HTML file and additional resources for the app.
+
+## License
+This project is licensed under the MIT License.
+
+Feel free to customize this README file based on your specific project structure, features, and additional details.
