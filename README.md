@@ -53,7 +53,7 @@ You run it after downloading the libraries
 
 # AUTHOR
 Shamsiddinov Shaxboz
-PreSeason 8
+PreSeason-8
 FullStack Developer
 [GitHub][https://github.com/WebShaxboz]
 [TelegranUser](shakhboz_web)
