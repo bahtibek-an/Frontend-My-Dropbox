@@ -1,47 +1,27 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
+QWASAR My Dropbox
+Welcome to QWASAR My Dropbox
+QWASAR My Dropbox
+Task
+My experience with QWASAR My Dropbox was nothing short of amazing. The invaluable support from my friends and the challenges faced during this project motivated me to push my limits. Currently, I am deeply engrossed in learning React.js, and the journey has been nothing short of incredible.
 
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
+LINK: [https://dropbox-two.vercel.app/]
 
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
+Description
+QWASAR My Dropbox offers a variety of exciting features to cater to your needs:
 
-=> File synchronization, that sounds cool!
+User Registration: Seamlessly create your account to unlock the full potential of QWASAR My Dropbox.
+Project Access: Explore the project and delve into its functionalities.
+File Upload: Effortlessly upload files to the platform, ensuring secure storage and easy accessibility.
+File Deletion: Enjoy the flexibility to remove any uploaded files whenever needed.
+Picture Upload: Add an artistic touch by uploading and sharing your favorite pictures.
+Installation
+To initiate the installation process, follow these steps:
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
+Run npm install to install the necessary dependencies.
+Usage
+Unleash the power of QWASAR My Dropbox with the following command:
 
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
-
-Let's implement a file synchronization using Amplify & Lambda & S3
-
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
-
-
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
-
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
-
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
-
-The url of your project will be store inside the readme.
-
-No more than 1 components per file.
-Additionals components will be in `src/components/`
-
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
-
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
-
-On the css/colors/design, you can be creative.
+bash
+Copy code
+npm run start
+This will start the project, allowing you to enjoy its seamless functionality.
