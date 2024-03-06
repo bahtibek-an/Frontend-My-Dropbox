@@ -1,0 +1,74 @@
+body {
+  background: url(./img/7U5y.gif);
+  background-size: cover;
+  color: #0ec7e4;
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 100%;
+  line-height: 30px;
+  text-shadow: 0 0.5px 0 #d4840b;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+
+.fileTable {
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.folder-link,
+.file-link {
+  text-decoration: none;
+  color: #f4f405;
+}
+
+.ellipsis {
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.icons {
+  display: none;
+  position: absolute;
+  background-size: cover;
+  box-shadow: 0 5px 6px rgba(224, 6, 6, 0.1);
+  border: 1px solid #16ff01;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.icons a,
+.icons span {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #d51212;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icons a:hover,
+.icons span:hover {
+  background-color: #220d81;
+  color: #c5ef09f5; 
+}
+
+.file:hover .icons {
+  display: block;
+}
