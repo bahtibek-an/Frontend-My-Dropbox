@@ -1,0 +1,51 @@
+.files-wrape{
+    /* border-bottom: 2px solid #413f3faf; */
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.files{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.filew-wrape-title{
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.file{
+    padding: 7px 35px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.file-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.file:hover{
+    background-color: #413f3faf;
+}
+
+.folder-icon{
+   font-size: 70px;
+}
+
+.file-name{
+    width: 200px;
+}
+.file-icon{
+    font-size: 70px;
+    color: rgb(197, 197, 190);
+}
