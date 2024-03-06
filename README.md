@@ -30,18 +30,18 @@ npm start
 The application will be accessible at http://localhost:3000 by default.
 
 ```
+## Features
+User authentication and authorization.
+File upload/download functionality.
+File sharing with secure links.
+User-friendly interface for easy navigation.
+
 
 ## Usage
 Visit the application in your web browser.
 Sign in or create an account.
 Upload, download, and manage your files.
 Share files with others by generating shareable links.
-Features
-User authentication and authorization.
-File upload/download functionality.
-File sharing with secure links.
-User-friendly interface for easy navigation.
-
 
 ## The Core Team
 
