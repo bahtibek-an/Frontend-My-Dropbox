@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-home {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.custum-file-upload {
+  display: flex;
+  cursor: pointer;
+  border: 2px dashed #cacaca;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px rgba(0, 0, 0, 0.1);
+}
+
+.custum-file-upload img {
+  width: 70px;
+}
+
+.custum-file-upload input {
+  display: none;
+}
+
+.folder-file-upload {
+  max-width: 350px;
+  padding: 10px;
+}
