@@ -1,47 +1,23 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
+# MyDropbox React Component
 
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
+This is a simple React component that provides users with the ability to select and upload files from their local system.
 
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
+## Additional Information
 
-=> File synchronization, that sounds cool!
+This component allows users to select a file from their system, display its name, and open it when the upload button is clicked.
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
+## Code Overview
 
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
+This component includes the following functionalities:
 
-Let's implement a file synchronization using Amplify & Lambda & S3
+- `handleFileChange`: Handles the user's file selection and updates the `selectedFile` state.
+- `handleUpload`: Uploads the selected file. If a file is selected, it logs its name to the console and opens its URL in a new browser tab.
+- `selectedFile`: Holds the selected file's information using the `useState` function.
 
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+## Installation
 
+1. Place the `MyDropbox.js` file into your React project directory.
+2. Import the necessary files:
 
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
-
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
-
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
-
-The url of your project will be store inside the readme.
-
-No more than 1 components per file.
-Additionals components will be in `src/components/`
-
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
-
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
-
-On the css/colors/design, you can be creative.
+   ```jsx
+   import MyDropbox from './MyDropbox';
