@@ -1,0 +1,28 @@
+.inpt {
+  color: white;
+  z-index: -1;
+  margin-left: 500px;
+ 
+}
+button {
+  background-color: green;
+  border: 1px solid blue;
+  color: white;
+  margin-left: 10px;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+b {
+  color: white;
+}
+h1{
+  margin-left: 500px;
+  color: red;
+  font-weight: bold;
+  font-size: 50px;
+}
+body {
+  background-image: url(https://files.123freevectors.com/wp-content/original/153537-black-red-and-blue-background-vector-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
