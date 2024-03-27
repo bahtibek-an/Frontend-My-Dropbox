@@ -1,0 +1,26 @@
+.sup-header{
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px 20px 15px; 
+}
+.navbar-sup-header{
+    display: flex;
+    gap: 35px;
+    padding-right: 30px;
+}
+
+.sup-header-btn{
+    padding: 7px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+.sup-header-btn:hover{
+    background-color: #1d1b1b;
+}
+
+.nav-root{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
