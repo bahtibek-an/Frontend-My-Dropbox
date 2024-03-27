@@ -1,0 +1,44 @@
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slideInLeft {
+  animation: slideInLeft 0.5s ease-in-out;
+}
+
+.slideInRight {
+  animation: slideInRight 0.5s ease-in-out;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .HomePage {
+    margin-left: 0px;
+  }
+}
+
+
+.CreateFolder {
+  background-color: yellow; 
+  animation: fadeIn 0.5s ease-in-out; 
+}
+
+
+.UploadFileModal {
+  cursor: pointer;
+  background-color: red; 
+  animation: fadeIn 0.5s ease-in-out; 
+}
