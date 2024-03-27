@@ -1,0 +1,28 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato/Lato-Regular.ttf");
+}
+body{
+  background: #E3E3EE;
+  padding: 10px;
+}
+.container{
+  display: flex;
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 10px;
+  height: 98vh;
+  background-color: white;
+  /* max-width: 1460px; */
+}
+.container .pages{
+  padding: 5px 10px;
+  width: 100%;
+}

@@ -1,0 +1,29 @@
+/** @format */
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .form__container {
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    width: 400px;
+    Form {
+      padding: 5px;
+      p {
+        font-size: 18px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      Input {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      Button{
+        width: 100%;
+      }
+    }
+  }
+}
